@@ -1,0 +1,6 @@
+c:\users\chris\documents\visual studio 2013\Projects\AngularTesting\AngularTesting\bin\AngularTesting.dll.config
+c:\users\chris\documents\visual studio 2013\Projects\AngularTesting\AngularTesting\bin\AngularTesting.dll
+c:\users\chris\documents\visual studio 2013\Projects\AngularTesting\AngularTesting\bin\AngularTesting.pdb
+c:\users\chris\documents\visual studio 2013\Projects\AngularTesting\AngularTesting\obj\Debug\AngularTesting.dll
+c:\users\chris\documents\visual studio 2013\Projects\AngularTesting\AngularTesting\obj\Debug\AngularTesting.pdb
+c:\users\chris\documents\visual studio 2013\Projects\AngularTesting\AngularTesting\obj\Debug\AngularTesting.csprojResolveAssemblyReference.cache

@@ -1,0 +1,95 @@
+﻿
+$breakpointTablet: 650px;
+$breakpointDesktop: 1000px;
+$skillCircleWidth: 100px;
+
+
+
+.skillsHeader {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+.skillsBreakdown {
+
+    .skillInfo {
+        display: inline-block;
+        padding-bottom: 4rem;
+        padding-top: 4rem;
+        text-align: center;
+        width: 100%;
+
+        @media (min-width: $breakpointTablet) {
+            width: 49%;
+        }
+
+        @media (min-width: $breakpointDesktop) {
+            width: 33%;
+        }
+
+        .skillCircle {
+            width: $skillCircleWidth;
+            height: $skillCircleWidth;
+            border-radius: 50%;
+            position: absolute;
+            color:white;
+
+            .circleInner {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -moz-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        &:nth-child(1) {
+            .skillCircle {
+                background: rgb(34, 57, 78);
+            }
+        }
+
+        &:nth-child(2) {
+            .skillCircle {
+                background: rgb(227, 55, 78);
+            }
+        }
+
+        &:nth-child(3) {
+            .skillCircle {
+                background: rgb(94, 227, 168);
+            }
+        }
+
+        &:nth-child(4) {
+            .skillCircle {
+                background: rgb(76, 214, 214);
+            }
+        }
+
+        &:nth-child(5) {
+            .skillCircle {
+                background: rgb(192, 121, 247);
+            }
+        }
+
+        &:nth-child(6) {
+            .skillCircle {
+                background: rgb(240, 160, 7);
+            }
+        }
+
+
+
+        .skillDesc {
+            margin-left: $skillCircleWidth + 21;
+            text-align: left;
+            color:black;
+        }
+    }
+}

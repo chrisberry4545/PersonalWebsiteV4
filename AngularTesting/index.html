@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Angular Material - Starter App</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/Content/app.css" />
+    <link href="Content/projectPopup.min.css" rel="stylesheet" />
+    <link href="Content/skillsDirective.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body ng-app="myApp" layout="row">
+
+    <div ng-view></div>
+
+    <script src="/Scripts/angular/angular.min.js"></script>
+    <script src="/Scripts/angular/angular-route.min.js"></script>
+    <script src="app/home/CutoutName.js"></script>
+    <script src="app/home/HomeModule.js"></script>
+    <script src="app/home/HomeController.js"></script>
+    <script src="app/directives/SkillsSummary.js"></script>
+    <script src="app/directives/ScrolldownButton.js"></script>
+    <script src="/app/projects/ProjectsSpinnerDirective.js"></script>
+    <script src="/app/projects/ProjectsModule.js"></script>
+    <script src="/app/projects/ProjectController.js"></script>
+    <script src="/app/projects/ProjectDetailController.js"></script>
+    <script src="/app/projects/ProjectsService.js"></script>
+    <script src="/app/directives/projectPopout.js"></script>
+    <script type="text/javascript">
+
+        var myApp = angular
+            .module('myApp', ['ngRoute', 'scrollDownButtonDirective', 'skillsSummaryDirective', 'projectPopoutDirective', 'projectSpinnerDirective', 'projects', 'cutoutnameDirective', 'home']);
+
+        myApp.config(['$routeProvider',
+          function ($routeProvider) {
+              $routeProvider.
+                when('/', {
+                    templateUrl: 'app/home/home.html',
+                    controller: 'HomeController',
+                    controllerAs: 'vm'
+                }).
+                when('/projects', {
+                    templateUrl: 'app/projects/view/project.html',
+                    controller: 'ProjectController',
+                    controllerAs: 'vm'
+                }).
+                when('/projects/:projectId', {
+                    templateUrl: 'app/projects/view/project.html',
+                    controller: 'ProjectDetailController',
+                    controllerAs: 'vm'
+                }).
+                otherwise({
+                    redirectTo: '/'
+                });
+          }]);
+
+    </script>
+</body>
+
+</html>

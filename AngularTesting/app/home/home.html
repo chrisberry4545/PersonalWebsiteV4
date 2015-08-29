@@ -1,0 +1,58 @@
+﻿<div class="home">
+
+    <div class="fullScreen heroImage raised1">
+
+        <div class="centered startDisplay">
+            <div class="cutoutHolder">
+                <cutoutname></cutoutname>
+            </div>
+            
+            <h1>
+                Chris Berry
+            </h1>
+            <h2>
+                Web Developer - London
+            </h2>
+
+        </div>
+
+        <scroll-down-button targetid="'firstInfoPanel'"></scroll-down-button>
+
+
+    </div>
+
+
+    <div id="firstInfoPanel" class="infoPanel marginBetweenBlocks">
+        <div class="maxWidth innerInfoPanel">
+            <p>
+                I love to challenge myself to make cool things and on this site you'll find some
+                examples of the projects I've worked on.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="projectWrapper">
+        <project-popout projects="vm.projects"></project-popout>
+    </div>
+
+    <section class="maxWidth">
+        <div class="marginBetweenBlocks">
+            <skills-summary title="'Key skills'" skills="vm.skills"></skills-summary>
+        </div>
+    </section>
+
+    <div class="projectWrapper">
+        <project-popout projects="vm.projects2"></project-popout>
+    </div>
+
+    <div class="footer">
+        <div class="maxWidth">
+            <a href="mailto:chrisberry4545@googlemail.com">
+                Chris Berry <br />
+                chrisberry4545@googlemail.com
+            </a>
+        </div>
+    </div>
+
+</div>
