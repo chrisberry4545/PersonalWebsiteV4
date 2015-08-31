@@ -36,6 +36,9 @@
     -o-transition: max-height ease-in-out 1s;
     -webkit-transition: max-height ease-in-out 1s;
     transition: max-height ease-in-out 1s; }
+    .popUpWrapper .popUpDetails .popUpDetailsInner {
+      padding-top: 1rem;
+      padding-bottom: 1rem; }
     .popUpWrapper .popUpDetails .popUpSticker {
       position: fixed;
       top: 100%;

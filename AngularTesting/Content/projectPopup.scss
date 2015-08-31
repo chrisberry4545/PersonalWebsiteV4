@@ -51,6 +51,11 @@ $breakpointDesktop: 1000px;
         transition: max-height ease-in-out 1s;
 
 
+        .popUpDetailsInner {
+            padding-top:1rem;
+            padding-bottom:1rem;
+        }
+
         .popUpSticker {
             position: fixed;
             top: 100%;

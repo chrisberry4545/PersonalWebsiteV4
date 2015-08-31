@@ -63,12 +63,50 @@
     <Content Include="app\home\HomeController.js" />
     <Content Include="app\home\HomeModule.js" />
     <Content Include="app\projects\ProjectsSpinnerDirective.js" />
+    <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\projectPopup.css">
       <DependentUpon>projectPopup.scss</DependentUpon>
     </Content>
     <Content Include="Content\projectPopup.min.css">
       <DependentUpon>projectPopup.css</DependentUpon>
     </Content>
+    <Content Include="Content\projectSpinner.css" />
+    <Content Include="Content\projectSpinner.min.css" />
+    <Content Include="Content\skillsDirective.css" />
+    <Content Include="Content\skillsDirective.min.css" />
+    <Content Include="cutoutname-template.html" />
+    <Content Include="Images\AnimalAdjectives\AATabletScreen.png" />
+    <Content Include="Images\AnimalAdjectives\AATabletScreenold.png" />
+    <Content Include="Images\AnimalAdjectives\CrustyBirmanScreen.png" />
+    <Content Include="Images\Dissertation\monopolycombined.png" />
+    <Content Include="Images\Dissertation\monopolycombinedold.png" />
+    <Content Include="Images\GBC\GBCHome.png" />
+    <Content Include="Images\GBC\GBCHomeBlurred.png" />
+    <Content Include="Images\GBC\GBCHomeMassive.png" />
+    <Content Include="Images\General\Coding.png" />
+    <Content Include="Images\General\github.svg" />
+    <Content Include="Images\General\globe.svg" />
+    <Content Include="Images\General\imageedit__7985926903.jpg" />
+    <Content Include="Images\General\pc.jpg" />
+    <Content Include="Images\General\play.svg" />
+    <Content Include="Images\HouseOwage\houseOwageScreenshot1.png" />
+    <Content Include="Images\HouseOwage\houseOwageScreenshotold.png" />
+    <Content Include="Images\Librarians\librariansPhoneScreenshot1.png" />
+    <Content Include="Images\Librarians\librariansTabletScreenshot1.png" />
+    <Content Include="Images\Librarians\librariansTabletScreenshot1odl.png" />
+    <Content Include="Images\MTGMirror\draftSimScreenshot.png" />
+    <Content Include="Images\MTGMirror\draftSimScreenshotold.png" />
+    <Content Include="Images\Parabola\ParabolaTablet.png" />
+    <Content Include="Images\Parabola\ParabolaTabletold.png" />
+    <Content Include="Images\Parabola\ParabolaWebsiteold.png" />
+    <Content Include="Images\PebbleBikeTracker\londonbike.png" />
+    <Content Include="Images\PebbleBikeTracker\londonbikeold.png" />
+    <Content Include="Images\Timeline\android.svg" />
+    <Content Include="Images\Timeline\clock.svg" />
+    <Content Include="Images\Timeline\coffee.svg" />
+    <Content Include="Images\Timeline\cogs.svg" />
+    <Content Include="Images\Timeline\university.svg" />
+    <Content Include="Images\Timeline\web.svg" />
     <Content Include="project-popout-template.html" />
     <Content Include="project-spinner-template.html" />
     <Content Include="Content\app.scss" />
@@ -79,6 +117,10 @@
     <Content Include="Content\projectPopup.css.map">
       <DependentUpon>projectPopup.css</DependentUpon>
     </Content>
+    <Content Include="Content\projectSpinner.css.map" />
+    <Content Include="Content\projectSpinner.scss" />
+    <Content Include="Content\skillsDirective.css.map" />
+    <Content Include="Content\skillsDirective.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -107,6 +149,8 @@
     <Content Include="Scripts\angular\angular-route.min.js" />
     <Content Include="Scripts\angular\angular.js" />
     <Content Include="Scripts\angular\angular.min.js" />
+    <Content Include="scrolldownbutton-template.html" />
+    <Content Include="skills-summary-template.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

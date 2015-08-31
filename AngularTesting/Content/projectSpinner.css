@@ -13,6 +13,9 @@
   left: 50%;
   top: 10%;
   opacity: 0.5;
+  -moz-transition: transform 1s ease-in, background 1s ease-in, opacity 1s ease-in, z-index 1s ease-in;
+  -o-transition: transform 1s ease-in, background 1s ease-in, opacity 1s ease-in, z-index 1s ease-in;
+  -webkit-transition: transform 1s ease-in, background 1s ease-in, opacity 1s ease-in, z-index 1s ease-in;
   transition: transform 1s ease-in, background 1s ease-in, opacity 1s ease-in, z-index 1s ease-in;
   padding: 1rem; }
   .projCard .projImg {
