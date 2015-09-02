@@ -28,11 +28,14 @@
     <script src="/app/projects/ProjectController.js"></script>
     <script src="/app/projects/ProjectDetailController.js"></script>
     <script src="/app/projects/ProjectsService.js"></script>
-    <script src="/app/directives/projectPopout.js"></script>
+    <script src="/app/directives/projectPopout.js"></script>    
+    <script src="/
+            
+            app/directives/anchor_smooth_scroll.js"></script>
     <script type="text/javascript">
 
         var myApp = angular
-            .module('myApp', ['ngRoute', 'scrollDownButtonDirective', 'skillsSummaryDirective', 'projectPopoutDirective', 'projectSpinnerDirective', 'projects', 'cutoutnameDirective', 'home']);
+            .module('myApp', ['ngRoute', 'angularSmoothScroll', 'scrollDownButtonDirective', 'skillsSummaryDirective', 'projectPopoutDirective', 'projectSpinnerDirective', 'projects', 'cutoutnameDirective', 'home']);
 
         myApp.config(['$routeProvider',
           function ($routeProvider) {

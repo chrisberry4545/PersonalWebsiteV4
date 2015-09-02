@@ -1,21 +1,17 @@
 ﻿<div class="home">
 
+    <nav>
+        <a smooth-scroll target="skills" offset="30">Skills</a>
+        <a smooth-scroll target="projects" offset="30">Projects</a>
+    </nav>
 
-    <!--<div>
-        <h1>
-            Chris Berry
-        </h1>
-        <h2>
-            Web Developer - London
-        </h2>
-    </div>-->
     <div class="fullScreen heroImage raised1">
 
         <div class="centered startDisplay">
             <div class="cutoutHolder">
                 <cutoutname></cutoutname>
             </div>
-            
+
             <h1>
                 Chris Berry
             </h1>
@@ -30,13 +26,13 @@
 
     </div>
 
-    <section class="maxWidth raised1" style="border:1px solid black;">
+    <section id="anchorskil;s" class="maxWidth">
         <div class="marginBetweenBlocks">
             <skills-summary title="'Key skills'" skills="vm.skills"></skills-summary>
         </div>
     </section>
 
-    <div class="projectWrapper">
+    <div id="anchorprojects" class="projectWrapper">
         <project-popout projects="vm.projects"></project-popout>
     </div>
 
