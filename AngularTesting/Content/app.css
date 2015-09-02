@@ -37,7 +37,7 @@
   width: 100vw; }
 
 .heroImage {
-  background: url(/Images/General/imageedit__7985926903.jpg) no-repeat center center fixed;
+  /*background: url(/Images/General/imageedit__7985926903.jpg) no-repeat center center fixed;*/
   background-size: cover; }
 
 .cutoutHolder {
@@ -45,6 +45,8 @@
   height: 300px;
   width: 415px;
   margin: auto; }
+  .cutoutHolder canvas {
+    opacity: 0.45; }
 
 .mainBtn {
   background: #673AB7;
@@ -82,7 +84,7 @@
   transform: translate(-50%, -50%); }
 
 .startDisplay {
-  color: white;
+  color: rgba(0, 0, 0, 0.8);
   text-align: center; }
   @media (min-width: 500px) {
     .startDisplay h1 {
@@ -112,11 +114,11 @@
   padding: 2.5rem 0 2.5rem 0; }
 
 .footer {
-  background: #673AB7;
+  background: rgba(41, 41, 41, 0.952941);
   color: white;
   text-align: center;
-  padding: 2rem;
-  font-size: 1.5rem; }
+  padding: 1rem;
+  font-size: 1rem; }
   .footer a {
     color: white;
     text-decoration: underline; }

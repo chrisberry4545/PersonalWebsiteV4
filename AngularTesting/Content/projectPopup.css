@@ -137,8 +137,7 @@
       -o-transform: translateY(-50%);
       -webkit-transform: translateY(-50%);
       transform: translateY(-50%);
-      width: 100%;
-      -webkit-filter: grayscale(100%); }
+      width: 100%; }
     .popupClickable .imgHolder .imgOverlay {
       background: rgba(0, 0, 0, 0.6);
       height: 100%;
@@ -173,7 +172,7 @@
         transform: translate(-50%, -10%); }
 
       .popupClickable .imgHolder .imgOverlay {
-        opacity: 0.3; }
+        opacity: 0.45; }
 
       .popupClickable .imgHolder:hover .imgOverlay {
         opacity: 1; }

@@ -40,7 +40,7 @@
                 function drawCanvasShapes() {
                     if (canvas.getContext) {
                         //coverCanvas();
-                        ctx.fillStyle = '#ffffff';
+                        ctx.fillStyle = '#000000';
                         drawShape(ctx, cShape);
                         ctx.fillRect(bShape.x, bShape.y, bShape.width, bShape.height);
                     }
