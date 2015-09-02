@@ -1,11 +1,23 @@
 ﻿<div class="home">
 
-    <nav>
-        <a smooth-scroll target="skills" offset="30">Skills</a>
-        <a smooth-scroll target="projects" offset="30">Projects</a>
+    <nav class="navBar raised1">
+        <div class="maxWidth">
+            <div class="navBarInner">
+                <a href="#"
+                   offset="120"
+                   scroll-to="skills">
+                    Skills
+                </a>
+                <a href="#"
+                   offset="120"
+                   scroll-to="projects">
+                    Projects
+                </a>
+            </div>
+        </div>
     </nav>
 
-    <div class="fullScreen heroImage raised1">
+    <div class="fullScreen heroImage">
 
         <div class="centered startDisplay">
             <div class="cutoutHolder">
@@ -21,21 +33,24 @@
 
         </div>
 
+        <a href="#"
+           scroll-to="skills" class="mainBtn toContentButton raised1">
+            <i class="fa fa-chevron-down fa-1x centered"></i>
+        </a>
         <scroll-down-button targetid="'firstInfoPanel'"></scroll-down-button>
 
 
     </div>
 
-    <section id="anchorskil;s" class="maxWidth">
+    <section id="skills" class="maxWidth">
         <div class="marginBetweenBlocks">
             <skills-summary title="'Key skills'" skills="vm.skills"></skills-summary>
         </div>
     </section>
 
-    <div id="anchorprojects" class="projectWrapper">
+    <div id="projects" class="projectWrapper">
         <project-popout projects="vm.projects"></project-popout>
     </div>
-
     <div class="footer">
         <div class="maxWidth">
             <a href="mailto:chrisberry4545@googlemail.com">

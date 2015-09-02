@@ -3,7 +3,8 @@ $breakpointDesktop: 1000px;
 
 $mainColor:#673AB7;
 $accentColor: #A7FFEB;
-$mainTextColor: white;
+$darkTextColor: rgba(0,0,0,0.8);
+$lightTextColor: rgba(255,255,255,1);
 $bolderColor: rgba(41, 41, 41, 0.952941);
 
 body{
@@ -31,19 +32,29 @@ body{
 
 $topBarHeight: 60px;
 .navBar {
-    background-color:$mainColor;
-    position:fixed;
-    top:0;
-    left:0;
-    text-align:center;
-    color:white;
-    height:$topBarHeight;
-    width:100%;
-    z-index:2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: left;
+    height: $topBarHeight;
+    width: 100%;
+    z-index: 2;
+    background:white;
 
-    h1 {
-        font-size:1.5rem;
-        font-weight:normal;
+    .navBarInner {
+        position: absolute;
+        top: 50%;
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+
+        a {
+            color: $darkTextColor;
+            text-decoration:none;
+            padding-left:1rem;
+        }
     }
 }
 .mainContent {
@@ -70,7 +81,7 @@ $topBarHeight: 60px;
 
 .mainBtn {
     background:$mainColor;
-    color:$mainTextColor;
+    color:$darkTextColor;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -89,10 +100,23 @@ $topBarHeight: 60px;
     -o-transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    margin:0;
-    border-radius:50%;
-    height: 40px;
-    width: 40px;
+    margin: 0;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    -moz-transition: transform ease-in-out 0.3s, box-shadow ease-in-out 0.3s;
+    -o-transition: transform ease-in-out 0.3s, box-shadow ease-in-out 0.3s;
+    -webkit-transition: transform ease-in-out 0.3s, box-shadow ease-in-out 0.3s;
+    transition: transform ease-in-out 0.3s, box-shadow ease-in-out 0.3s;
+
+    &:hover {
+        @extend .raised2;
+        -moz-transform: scale(1.05,1.05) translateX(-50%);
+        -ms-transform: scale(1.05,1.05) translateX(-50%);
+        -o-transform: scale(1.05,1.05) translateX(-50%);
+        -webkit-transform: scale(1.05,1.05) translateX(-50%);
+        transform: scale(1.05,1.05) translateX(-50%);
+    }
 }
 
 .centered {
@@ -132,7 +156,7 @@ $topBarHeight: 60px;
 .infoPanel {
     text-align:center;
     background:$mainColor;
-    color:$mainTextColor;
+    color:$lightTextColor;
     padding:2rem;
 
     h2 {
@@ -149,7 +173,7 @@ $topBarHeight: 60px;
 
 .footer {
     background:$bolderColor;
-    color:$mainTextColor;
+    color:$lightTextColor;
     text-align:center;
     padding:1rem;
     font-size: 1rem;

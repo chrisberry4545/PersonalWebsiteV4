@@ -57,9 +57,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\directives\anchor_smooth_scroll.js" />
+    <Content Include="app\directives\anchor_smooth_scroll.min.js" />
     <Content Include="app\directives\ProjectPopout.js" />
-    <Content Include="app\directives\ScrolldownButton.js" />
     <Content Include="app\directives\SkillsSummary.js" />
     <Content Include="app\home\CutoutName.js" />
     <Content Include="app\home\home.html" />
@@ -152,7 +151,6 @@
     <Content Include="Scripts\angular\angular-route.min.js" />
     <Content Include="Scripts\angular\angular.js" />
     <Content Include="Scripts\angular\angular.min.js" />
-    <Content Include="scrolldownbutton-template.html" />
     <Content Include="skills-summary-template.html" />
     <Content Include="Web.config" />
   </ItemGroup>

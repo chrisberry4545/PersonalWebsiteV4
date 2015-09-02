@@ -2,11 +2,14 @@
 
     angular
          .module('home')
-         .controller('HomeController', ['angularSmoothScroll', 'cutoutnameDirective', 'scrollDownButtonDirective', 'skillsSummaryDirective', 'projectPopoutDirective', 'projectsService', '$log', '$q', '$scope',
+         .controller('HomeController',
+         ['smoothScroll', 'cutoutnameDirective', 'skillsSummaryDirective',
+             'projectPopoutDirective', 'projectsService',
+             '$log', '$q', '$scope',
             HomeController
          ]);
 
-    function HomeController(angularSmoothScroll, cutoutnameDirective, scrollDownButtonDirective, skillsSummaryDirective, projectPopoutDirective, projectsService, $log, $q, $scope) {
+    function HomeController(smoothScroll, cutoutnameDirective, skillsSummaryDirective, projectPopoutDirective, projectsService, $log, $q, $scope) {
         var vm = this;
 
         vm.projects = [];

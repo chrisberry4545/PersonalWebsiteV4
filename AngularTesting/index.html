@@ -21,21 +21,21 @@
     <script src="app/home/CutoutName.js"></script>
     <script src="app/home/HomeModule.js"></script>
     <script src="app/home/HomeController.js"></script>
+    <script src="/app/directives/anchor_smooth_scroll.min.js"></script>
     <script src="app/directives/SkillsSummary.js"></script>
-    <script src="app/directives/ScrolldownButton.js"></script>
     <script src="/app/projects/ProjectsSpinnerDirective.js"></script>
     <script src="/app/projects/ProjectsModule.js"></script>
     <script src="/app/projects/ProjectController.js"></script>
     <script src="/app/projects/ProjectDetailController.js"></script>
     <script src="/app/projects/ProjectsService.js"></script>
     <script src="/app/directives/projectPopout.js"></script>    
-    <script src="/
-            
-            app/directives/anchor_smooth_scroll.js"></script>
     <script type="text/javascript">
 
         var myApp = angular
-            .module('myApp', ['ngRoute', 'angularSmoothScroll', 'scrollDownButtonDirective', 'skillsSummaryDirective', 'projectPopoutDirective', 'projectSpinnerDirective', 'projects', 'cutoutnameDirective', 'home']);
+            .module('myApp', ['ngRoute', 'smoothScroll',
+                'skillsSummaryDirective', 'projectPopoutDirective',
+                'projectSpinnerDirective', 'projects',
+                'cutoutnameDirective', 'home']);
 
         myApp.config(['$routeProvider',
           function ($routeProvider) {
