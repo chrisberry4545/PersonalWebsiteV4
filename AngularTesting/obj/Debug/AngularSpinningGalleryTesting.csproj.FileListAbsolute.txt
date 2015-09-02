@@ -10,3 +10,9 @@ C:\Users\Chris\Source\Repos\PersonalWebsiteV42\AngularTesting\bin\AngularTesting
 C:\Users\Chris\Source\Repos\PersonalWebsiteV42\AngularTesting\obj\Debug\AngularSpinningGalleryTesting.csprojResolveAssemblyReference.cache
 C:\Users\Chris\Source\Repos\PersonalWebsiteV42\AngularTesting\obj\Debug\AngularTesting.dll
 C:\Users\Chris\Source\Repos\PersonalWebsiteV42\AngularTesting\obj\Debug\AngularTesting.pdb
+C:\Users\Chris\Source\Repos\PersonalWebsiteV4\AngularTesting\bin\AngularTesting.dll.config
+C:\Users\Chris\Source\Repos\PersonalWebsiteV4\AngularTesting\bin\AngularTesting.dll
+C:\Users\Chris\Source\Repos\PersonalWebsiteV4\AngularTesting\bin\AngularTesting.pdb
+C:\Users\Chris\Source\Repos\PersonalWebsiteV4\AngularTesting\obj\Debug\AngularSpinningGalleryTesting.csprojResolveAssemblyReference.cache
+C:\Users\Chris\Source\Repos\PersonalWebsiteV4\AngularTesting\obj\Debug\AngularTesting.dll
+C:\Users\Chris\Source\Repos\PersonalWebsiteV4\AngularTesting\obj\Debug\AngularTesting.pdb

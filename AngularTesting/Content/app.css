@@ -1,9 +1,8 @@
 ﻿body {
-  min-height: 1500px;
   margin: 0;
   width: 100%;
   overflow-x: hidden;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: 'Roboto', sans-serif; }
 
 .maxWidth {
   max-width: 1100px;
@@ -16,6 +15,23 @@
   box-shadow: 0 7px 3px 0 rgba(0, 0, 0, 0.26); }
 
 /**Home**/
+.navBar {
+  background-color: #673AB7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: white;
+  height: 60px;
+  width: 100%;
+  z-index: 2; }
+  .navBar h1 {
+    font-size: 1.5rem;
+    font-weight: normal; }
+
+.mainContent {
+  margin-top: 60px; }
+
 .fullScreen {
   height: 100vh;
   width: 100vw; }
@@ -31,7 +47,7 @@
   margin: auto; }
 
 .mainBtn {
-  background: #03A9F4;
+  background: #673AB7;
   color: white;
   color: white;
   text-decoration: none;
@@ -43,14 +59,17 @@
 
 .toContentButton {
   position: absolute;
-  bottom: 0;
-  left: 50%;
+  bottom: 5%;
+  left: 80%;
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  margin: 0; }
+  margin: 0;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px; }
 
 .centered {
   position: absolute;
@@ -64,14 +83,16 @@
 
 .startDisplay {
   color: white;
-  text-align: center;
-  font-family: Lato, sans-serif; }
+  text-align: center; }
   @media (min-width: 500px) {
     .startDisplay h1 {
-      font-size: 5.3rem; }
+      font-size: 3.3rem; }
 
     .startDisplay h2 {
-      font-size: 3.5rem; }
+      font-size: 2rem; }
+
+    .startDisplay h1, .startDisplay h2 {
+      font-weight: normal; }
  }
 
 .marginBetweenBlocks {
@@ -79,7 +100,7 @@
 
 .infoPanel {
   text-align: center;
-  background: #03A9F4;
+  background: #673AB7;
   color: white;
   padding: 2rem; }
   .infoPanel h2 {
@@ -88,11 +109,10 @@
     font-size: 2rem; }
 
 .projectWrapper {
-  padding: 5rem 0 5rem 0;
-  background: rgba(219, 234, 245, 0.3); }
+  padding: 2.5rem 0 2.5rem 0; }
 
 .footer {
-  background: #03A9F4;
+  background: #673AB7;
   color: white;
   text-align: center;
   padding: 2rem;

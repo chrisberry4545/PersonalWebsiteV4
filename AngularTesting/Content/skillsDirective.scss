@@ -3,7 +3,9 @@ $breakpointTablet: 650px;
 $breakpointDesktop: 1000px;
 $skillCircleWidth: 100px;
 
-
+.skillSection {
+    color:rgba(0,0,0,0.87);
+}
 
 .skillsHeader {
     text-align: center;
@@ -89,7 +91,6 @@ $skillCircleWidth: 100px;
         .skillDesc {
             margin-left: $skillCircleWidth + 21;
             text-align: left;
-            color:black;
         }
     }
 }

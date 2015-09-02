@@ -2,9 +2,8 @@
 $breakpointDesktop: 1000px;
 
 .portfolioItems {
-    max-width: 2100px;
+    max-width: 1400px;
     margin: auto;
-    background-color:grey;
 }
 
 .raised1 {
@@ -27,11 +26,17 @@ $breakpointDesktop: 1000px;
     }
 
     @media(min-width: $breakpointTablet) {
-        width: 33%;
+        width:48%;
+        padding:1%;
     }
 
     @media(min-width: $breakpointDesktop) {
-        width: 33%;
+        
+        width: 31%;
+        padding:1%;
+        &:nth-child(5n + 4), &:nth-child(5n + 5) {
+            width:48%;
+        }
     }
 
 
@@ -155,6 +160,8 @@ $backgroundColor: rgba(0,0,0,0.8);
             -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
             width: 100%;
+
+            -webkit-filter: grayscale(100%);
         }
 
         .imgOverlay {
