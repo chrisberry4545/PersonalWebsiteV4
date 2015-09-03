@@ -18,12 +18,15 @@
                 var canvas = document.getElementById('canvas');
                 var ctx = canvas.getContext('2d');
 
-                var cShape = [[0, 150], [150, 150], [150, 150]];
+
+                var middlePoint = 100;
+                var targetHeight = 200;
+                var cShape = [[0, 100], [100, 100], [100, 100]];
 
                 var bShape = {
-                    x: 250,
-                    y: 150,
-                    width: 100,
+                    x: 150,
+                    y: middlePoint,
+                    width: 75,
                     height: 0
                 }
 
@@ -59,13 +62,12 @@
                     // pixels / second
                     var amountToMove = linearSpeed * time / 10000;
 
-                    var targetHeight = 300;
                     bShape.height = bShape.height < targetHeight ? bShape.height + 2 * amountToMove : targetHeight;
 
                     var targetYB = 0;
                     bShape.y = bShape.y > targetYB ? bShape.y - amountToMove : targetYB;
 
-                    var targetY = 300;
+                    var targetY = targetHeight;
                     cShape[1][1] += amountToMove;
                     cShape[1][1] = cShape[1][1] < targetY ? cShape[1][1] : targetY;
 

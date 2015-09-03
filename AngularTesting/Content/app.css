@@ -50,8 +50,6 @@
 
 .cutoutHolder {
   display: block;
-  height: 300px;
-  width: 415px;
   margin: auto; }
   .cutoutHolder canvas {
     opacity: 0.45; }
