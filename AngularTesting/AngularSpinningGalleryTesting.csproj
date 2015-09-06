@@ -147,6 +147,7 @@
       <DependentUpon>app.css</DependentUpon>
     </Content>
     <Content Include="index.html" />
+    <Content Include="Scripts\angular\angular-animate.min.js" />
     <Content Include="Scripts\angular\angular-aria.min.js" />
     <Content Include="Scripts\angular\angular-route.min.js" />
     <Content Include="Scripts\angular\angular.js" />

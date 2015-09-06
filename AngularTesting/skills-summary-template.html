@@ -1,6 +1,4 @@
 ﻿<div class="skillSection">
-    <h2 class="skillsHeader">{{title}}</h2>
-
     <div class="skillsBreakdown">
         <div ng-repeat="s in skills" class="skillInfo">
             <div class="skillCircle raised1">
@@ -10,7 +8,11 @@
             </div>
             <div class="skillDesc">
                 <h3>{{s.name}}</h3>
-                <p>{{s.description}}</p>
+                <ul ng-if="s.skillbreakdown.length > 0">
+                    <li ng-repeat="subskill in s.skillbreakdown">
+                        {{subskill}}
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

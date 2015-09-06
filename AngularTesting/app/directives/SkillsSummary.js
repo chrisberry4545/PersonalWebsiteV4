@@ -9,8 +9,7 @@
             return {
                 link: link,
                 scope: {
-                    skills: '=skills',
-                    title: '=title'
+                    skills: '=skills'
                 },
                 templateUrl: 'skills-summary-template.html'
             };

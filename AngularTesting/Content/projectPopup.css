@@ -27,18 +27,18 @@
       .popUpWrapper:nth-child(5n+4), .popUpWrapper:nth-child(5n+5) {
         width: 48%; } }
   .popUpWrapper .popUpDetails {
-    color: white;
+    color: rgba(0, 0, 0, 0.8);
     position: fixed;
     left: 0;
     top: 100%;
     max-height: 0;
     overflow: hidden;
-    margin-top: -0.3rem;
-    padding: 0 1rem 0 1rem;
+    padding: 0 2rem 0 2rem;
     -moz-transition: max-height ease-in-out 1s;
     -o-transition: max-height ease-in-out 1s;
     -webkit-transition: max-height ease-in-out 1s;
-    transition: max-height ease-in-out 1s; }
+    transition: max-height ease-in-out 1s;
+    background: white; }
     .popUpWrapper .popUpDetails .popUpDetailsInner {
       padding-top: 1rem;
       padding-bottom: 1rem; }
@@ -54,8 +54,9 @@
       border-radius: 50%;
       width: 50px;
       height: 50px;
-      color: white;
-      display: none; }
+      color: rgba(0, 0, 0, 0.8);
+      display: none;
+      background: white; }
       .popUpWrapper .popUpDetails .popUpSticker .stickerIcon {
         position: absolute;
         top: 50%;
@@ -65,30 +66,6 @@
         -o-transform: translate(-50%, -50%);
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%); }
-  .popUpWrapper:nth-child(6n+1) .popUpDetails {
-    background: #22394e; }
-    .popUpWrapper:nth-child(6n+1) .popUpDetails .popUpSticker {
-      background: #22394e; }
-  .popUpWrapper:nth-child(6n+2) .popUpDetails {
-    background: #e3374e; }
-    .popUpWrapper:nth-child(6n+2) .popUpDetails .popUpSticker {
-      background: #e3374e; }
-  .popUpWrapper:nth-child(6n+3) .popUpDetails {
-    background: #5ee3a8; }
-    .popUpWrapper:nth-child(6n+3) .popUpDetails .popUpSticker {
-      background: #5ee3a8; }
-  .popUpWrapper:nth-child(6n+4) .popUpDetails {
-    background: #4cd6d6; }
-    .popUpWrapper:nth-child(6n+4) .popUpDetails .popUpSticker {
-      background: #4cd6d6; }
-  .popUpWrapper:nth-child(6n+5) .popUpDetails {
-    background: #c079f7; }
-    .popUpWrapper:nth-child(6n+5) .popUpDetails .popUpSticker {
-      background: #c079f7; }
-  .popUpWrapper:nth-child(6n+6) .popUpDetails {
-    background: #f0a007; }
-    .popUpWrapper:nth-child(6n+6) .popUpDetails .popUpSticker {
-      background: #f0a007; }
 
 .popUpBackground {
   border-radius: 50%;

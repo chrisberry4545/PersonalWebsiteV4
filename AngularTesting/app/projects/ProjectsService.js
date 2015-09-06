@@ -192,25 +192,33 @@
             bikeTrackerPebble,
             gbc,
             houseOwage,
-            librarians,
-            mtgMirror,
             parabolaSoftware,
+            mtgMirror,
+            librarians,
             animalAdjetives,
             dissertation
         ];
         
-        function KeySkill(name, icon, description) {
+        function KeySkill(name, icon, skillbreakdown) {
             this.name = name;
             this.icon = icon;
-            this.description = description;
+            this.skillbreakdown = skillbreakdown;
         }
         var keySkills = [
-            new KeySkill('C#', 'fa-server', 'C# description'),
-            new KeySkill('Javascript', 'fa-file-text', 'Js desc'),
-            new KeySkill('CSS', 'fa-css3', 'CSS description'),
-            new KeySkill('HTML', 'fa-html5', 'HTML description'),
-            new KeySkill('SQL', 'fa-database', 'SQL description'),
-            new KeySkill('Android', 'fa-android', 'Android description')
+            new KeySkill('C#',
+                'fa-server',
+                ['MVC', 'Entity Framework', 'Web Api 2', 'LINQ']),
+            new KeySkill('Javascript',
+                'fa-file-text',
+                ['KnockoutJS', 'AngularJS', 'jQuery']),
+            new KeySkill('CSS',
+                'fa-css3',
+                ['Sass']),
+            new KeySkill('HTML', 'fa-html5', ''),
+            new KeySkill('SQL',
+                'fa-database',
+                ''),
+            new KeySkill('Android', 'fa-android', '')
         ];
 
         // Promise-based API

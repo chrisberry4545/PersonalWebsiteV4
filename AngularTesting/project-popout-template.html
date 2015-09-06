@@ -5,8 +5,7 @@
         <div style="transform:{{proj.transform}}" ng-click="openPopup($event)" class="popupClickable">
             <div class="imgHolder">
                 <img src="{{proj.image}}" alt={{proj.imageAlt}} />
-                <div class="imgOverlay">
-                </div>
+                <div class="imgOverlay"></div>
                 <div class="overlayTitle">{{proj.title}}</div>
             </div>
             
@@ -23,12 +22,19 @@
                         </li>
                     </ul>
 
-                    <div class="popUpSticker raised1">
+                    <div class="popUpSticker raised1" ng-class="{popUpStickerLink: proj.link != null}" ng-if="proj.link != null">
+                        <a href="{{proj.link}}" target="_blank">
+                            <i class="stickerIcon fa fa-{{proj.projFaIcon}} fa-2x"></i>
+                        </a>
+                    </div>
+
+                    <div class="popUpSticker raised1" ng-if="proj.link == null">
                         <i class="stickerIcon fa fa-{{proj.projFaIcon}} fa-2x"></i>
                     </div>
-                </div>
 
+                </div>
             </div>
+
             <div ng-click="closePopup()" class="closePopupBtn" ng-if="proj.IsActive">
                 <button><i class="fa fa-times fa-2x"></i></button>
             </div>

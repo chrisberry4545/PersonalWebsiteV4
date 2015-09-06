@@ -11,10 +11,20 @@
 .raised1 {
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.26); }
 
-.raised2, .toContentButton:hover {
+.raised2, .toContentButton:hover, .popUpWrapper .popUpDetails .popUpSticker.popUpStickerLink:hover {
   box-shadow: 0 7px 3px 0 rgba(0, 0, 0, 0.26); }
 
 /**Home**/
+.divider {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 0 1.5rem 0 1.5rem; }
+  @media (min-width: 500px) {
+    .divider {
+      margin: 0 2.5rem 0 2.5rem; } }
+  @media (min-width: 1000px) {
+    .divider {
+      margin: 0 5rem 0 5rem; } }
+
 .navBar {
   position: fixed;
   top: 0;
@@ -24,7 +34,10 @@
   width: 100%;
   z-index: 2;
   background: white; }
+  .navBar .cutoutHolder {
+    padding-top: 9px; }
   .navBar .navBarInner {
+    padding-left: 60px;
     position: absolute;
     top: 50%;
     -moz-transform: translateY(-50%);
@@ -32,6 +45,9 @@
     -o-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%); }
+    @media (min-width: 500px) {
+      .navBar .navBarInner {
+        padding-left: 100px; } }
     .navBar .navBarInner a {
       color: rgba(0, 0, 0, 0.8);
       text-decoration: none;
@@ -52,7 +68,16 @@
   display: block;
   margin: auto; }
   .cutoutHolder canvas {
-    opacity: 0.45; }
+    opacity: 0.3; }
+
+.sectionHeader {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 0;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.8); }
+  .sectionHeader.projectHeader {
+    padding-bottom: 4rem; }
 
 .mainBtn {
   background: #673AB7;
@@ -129,14 +154,28 @@
 .projectWrapper {
   padding: 2.5rem 0 2.5rem 0; }
 
+.skillsDesc {
+  color: rgba(0, 0, 0, 0.8); }
+
 .footer {
-  background: rgba(41, 41, 41, 0.952941);
-  color: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  background: rgba(41, 41, 41, 0.3);
   text-align: center;
   padding: 1rem;
   font-size: 1rem; }
   .footer a {
-    color: white;
-    text-decoration: underline; }
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none; }
+
+.popUpWrapper .popUpDetails .popUpSticker.popUpStickerLink {
+  background: #673AB7; }
+  .popUpWrapper .popUpDetails .popUpSticker.popUpStickerLink:hover {
+    -moz-transform: scale(1.05, 1.05) translate(-50%, -50%);
+    -ms-transform: scale(1.05, 1.05) translate(-50%, -50%);
+    -o-transform: scale(1.05, 1.05) translate(-50%, -50%);
+    -webkit-transform: scale(1.05, 1.05) translate(-50%, -50%);
+    transform: scale(1.05, 1.05) translate(-50%, -50%); }
+  .popUpWrapper .popUpDetails .popUpSticker.popUpStickerLink a {
+    color: white; }
 
 /*# sourceMappingURL=app.css.map */
