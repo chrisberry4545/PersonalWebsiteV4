@@ -2,14 +2,19 @@
   color: rgba(0, 0, 0, 0.87); }
 
 .skillsBreakdown .skillInfo {
-  display: inline-block;
   padding-bottom: 4rem;
   padding-top: 4rem;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  display: block; }
+  .skillsBreakdown .skillInfo ul {
+    padding-left: 1.5rem; }
+  .skillsBreakdown .skillInfo h3 {
+    margin-top: 0; }
   @media (min-width: 650px) {
     .skillsBreakdown .skillInfo {
-      width: 49%; } }
+      width: 49%;
+      display: inline-flex; } }
   @media (min-width: 1000px) {
     .skillsBreakdown .skillInfo {
       width: 33%; } }

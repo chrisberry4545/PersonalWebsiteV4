@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularSpinningGalleryTesting", "AngularTesting\AngularSpinningGalleryTesting.csproj", "{20D02BDC-E573-4AD9-B9A2-CE3EA0D7FC62}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalWebsiteV4", "AngularTesting\PersonalWebsiteV4.csproj", "{20D02BDC-E573-4AD9-B9A2-CE3EA0D7FC62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -14,6 +14,52 @@
 .raised2, .toContentButton:hover, .popUpWrapper .popUpDetails .popUpSticker.popUpStickerLink:hover {
   box-shadow: 0 7px 3px 0 rgba(0, 0, 0, 0.26); }
 
+.hidden {
+  opacity: 0; }
+
+.animated {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@-moz-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0); }
+
+  to {
+    opacity: 1;
+    transform: none; } }
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0); }
+
+  to {
+    opacity: 1;
+    transform: none; } }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0); }
+
+  to {
+    opacity: 1;
+    transform: none; } }
+
+.fadeInUp {
+  -moz-animation-name: fadeInUp;
+  -o-animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp; }
+
 /**Home**/
 .divider {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -35,7 +81,13 @@
   z-index: 2;
   background: white; }
   .navBar .cutoutHolder {
-    padding-top: 9px; }
+    position: absolute;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); }
   .navBar .navBarInner {
     padding-left: 60px;
     position: absolute;
@@ -51,7 +103,11 @@
     .navBar .navBarInner a {
       color: rgba(0, 0, 0, 0.8);
       text-decoration: none;
-      padding-left: 1rem; }
+      padding: 0 0.5rem 0 0.5rem;
+      font-size: 0.7rem;
+      border-right: 1px solid rgba(0, 0, 0, 0.2); }
+      .navBar .navBarInner a:last-child {
+        border-right: none; }
 
 .mainContent {
   margin-top: 60px; }

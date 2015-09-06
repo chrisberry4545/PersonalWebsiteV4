@@ -34,11 +34,14 @@
     max-height: 0;
     overflow: hidden;
     padding: 0 2rem 0 2rem;
-    -moz-transition: max-height ease-in-out 1s;
-    -o-transition: max-height ease-in-out 1s;
-    -webkit-transition: max-height ease-in-out 1s;
-    transition: max-height ease-in-out 1s;
-    background: white; }
+    -moz-transition: max-height ease-in-out 1s, margin-top ease-in-out 0.25s;
+    -o-transition: max-height ease-in-out 1s, margin-top ease-in-out 0.25s;
+    -webkit-transition: max-height ease-in-out 1s, margin-top ease-in-out 0.25s;
+    transition: max-height ease-in-out 1s, margin-top ease-in-out 0.25s;
+    background: white;
+    margin-top: 1px; }
+    .popUpWrapper .popUpDetails h2 {
+      font-size: 1rem; }
     .popUpWrapper .popUpDetails .popUpDetailsInner {
       padding-top: 1rem;
       padding-bottom: 1rem; }
@@ -222,7 +225,7 @@
 .selectedAnimationFinished.closePopup {
   opacity: 1; }
 .selectedAnimationFinished .popUpDetails {
-  max-height: 500px; }
+  max-height: 1000px; }
   .selectedAnimationFinished .popUpDetails .popUpSticker {
     display: block; }
 .selectedAnimationFinished .closePopupBtn {

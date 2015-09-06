@@ -27,7 +27,7 @@
 
         <div class="centered startDisplay">
             <div class="cutoutHolder">
-                <cutoutname color="rgb(41,41,41)" animate="true" width="230"></cutoutname>
+                <cutoutname color="rgb(41,41,41)" animate="true" width="200"></cutoutname>
             </div>
 
             <h1>
@@ -47,14 +47,14 @@
     </div>
 
     <div class="divider"></div>
-    <div id="projects" class="projectWrapper">
+    <div id="projects" class="projectWrapper hidden" when-visible="vm.animateElementIn" when-not-visible="vm.animateElementOut">
         <h2 class="sectionHeader projectHeader">Projects</h2>
         <project-popout projects="vm.projects"></project-popout>
     </div>
 
 
     <div class="divider"></div>
-    <section id="skills" class="maxWidth">
+    <section id="skills" class="maxWidth hidden" when-visible="vm.animateElementIn" when-not-visible="vm.animateElementOut">
         <div class="marginBetweenBlocks">
             <h2 class="sectionHeader">Key skills</h2>
             <skills-summary title="'Key skills'" skills="vm.skills"></skills-summary>

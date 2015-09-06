@@ -123,6 +123,9 @@
     <Content Include="Content\projectSpinner.scss" />
     <Content Include="Content\skillsDirective.css.map" />
     <Content Include="Content\skillsDirective.scss" />
+    <Content Include="Scripts\angular-scroll-animate.min.js.map">
+      <DependentUpon>angular-scroll-animate.min.js</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -147,6 +150,10 @@
       <DependentUpon>app.css</DependentUpon>
     </Content>
     <Content Include="index.html" />
+    <Content Include="Scripts\angular-scroll-animate.js" />
+    <Content Include="Scripts\angular-scroll-animate.min.js">
+      <DependentUpon>angular-scroll-animate.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\angular\angular-animate.min.js" />
     <Content Include="Scripts\angular\angular-aria.min.js" />
     <Content Include="Scripts\angular\angular-route.min.js" />

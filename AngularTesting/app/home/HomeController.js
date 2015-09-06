@@ -15,6 +15,14 @@
         vm.projects = [];
         vm.skills = [];
 
+        vm.animateElementIn = function ($el) {
+            $el.removeClass('hidden');
+            $el.addClass('animated fadeInUp'); // this example leverages animate.css classes 
+        };
+
+        vm.animateElementOut = function ($el) {
+        }
+
 
         projectsService
           .loadAllProjects()
