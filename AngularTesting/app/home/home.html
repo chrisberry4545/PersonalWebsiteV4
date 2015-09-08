@@ -47,15 +47,17 @@
     </div>
 
     <div class="divider"></div>
-    <div id="projects" class="projectWrapper hidden" when-visible="vm.animateElementIn" when-not-visible="vm.animateElementOut">
-        <h2 class="sectionHeader projectHeader">Projects</h2>
-        <project-popout projects="vm.projects"></project-popout>
+    <div id="projects" class="projectWrapper">
+        <div class="hidden" when-visible="vm.animateElementIn" when-not-visible="vm.animateElementOut">
+            <h2 class="sectionHeader projectHeader">Projects</h2>
+            <project-popout projects="vm.projects"></project-popout>
+        </div>
     </div>
 
 
     <div class="divider"></div>
-    <section id="skills" class="maxWidth hidden" when-visible="vm.animateElementIn" when-not-visible="vm.animateElementOut">
-        <div class="marginBetweenBlocks">
+    <section id="skills" class="maxWidth">
+        <div class="marginBetweenBlocks hidden" when-visible="vm.animateElementIn" when-not-visible="vm.animateElementOut">
             <h2 class="sectionHeader">Key skills</h2>
             <skills-summary title="'Key skills'" skills="vm.skills"></skills-summary>
         </div>

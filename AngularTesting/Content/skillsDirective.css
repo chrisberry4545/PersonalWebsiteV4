@@ -19,8 +19,8 @@
     .skillsBreakdown .skillInfo {
       width: 33%; } }
   .skillsBreakdown .skillInfo .skillCircle {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     position: absolute;
     color: white; }
@@ -46,7 +46,7 @@
   .skillsBreakdown .skillInfo:nth-child(6) .skillCircle {
     background: #f0a007; }
   .skillsBreakdown .skillInfo .skillDesc {
-    margin-left: 121px;
+    margin-left: 101px;
     text-align: left; }
 
 /*# sourceMappingURL=skillsDirective.css.map */

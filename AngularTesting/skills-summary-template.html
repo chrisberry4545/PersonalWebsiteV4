@@ -8,11 +8,13 @@
             </div>
             <div class="skillDesc">
                 <h3>{{s.name}}</h3>
-                <ul ng-if="s.skillbreakdown.length > 0">
-                    <li ng-repeat="subskill in s.skillbreakdown">
-                        {{subskill}}
-                    </li>
-                </ul>
+            </div>
+            <br />
+            <div ng-if="s.skillbreakdown.length > 0">
+                <span ng-repeat="subskill in s.skillbreakdown">
+                    {{subskill}}
+                    <span ng-if="$index != s.skillbreakdown.length - 1">, </span>
+                </span>
             </div>
         </div>
     </div>
