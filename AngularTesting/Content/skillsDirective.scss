@@ -1,7 +1,7 @@
 ﻿
 $breakpointTablet: 650px;
 $breakpointDesktop: 1000px;
-$skillCircleWidth: 80px;
+$skillCircleWidth: 95px;
 
 $textColor: rgba(0,0,0,0.8);
 
@@ -11,19 +11,33 @@ $textColor: rgba(0,0,0,0.8);
 
 .skillsBreakdown {
 
+    /*cursor:pointer;*/
+
     .skillInfo {
-        padding-bottom: 4rem;
-        padding-top: 4rem;
+
         text-align: center;
         width: 100%;
         display: block;
+        padding-bottom:2rem;
+        padding-top:2rem;
+
+        @media(min-width:$breakpointTablet) {
+            padding-bottom: 3rem;
+            padding-top: 3rem;
+        }
+        @media(min-width:$breakpointDesktop) {
+            padding-bottom: 4rem;
+            padding-top: 4rem;
+        }
+        
+
 
         ul {
             padding-left: 1.5rem;
         }
 
         h3 {
-            margin-top: 0;
+            margin:0;
         }
 
         @media (min-width: $breakpointTablet) {
@@ -41,6 +55,7 @@ $textColor: rgba(0,0,0,0.8);
             border-radius: 50%;
             color: white;
             position:relative;
+            margin: auto;
 
             .circleInner {
                 position: absolute;
@@ -93,18 +108,18 @@ $textColor: rgba(0,0,0,0.8);
 
 
         .skillDesc {
-            text-align: left;
-            margin-top: 0.55rem;
-            position: absolute;
-            top: 50%;
-            left: 50%;
+            text-align: center;
+            margin-top: 1.2rem;
             color: $textColor;
-            margin-left: ($skillCircleWidth /2 + 15);
             -moz-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
             -o-transform: translateY(-50%);
             -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
+        }
+
+        .skillBreakdown {
+            display:none;
         }
     }
 }
