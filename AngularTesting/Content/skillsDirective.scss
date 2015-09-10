@@ -10,26 +10,25 @@ $textColor: rgba(0,0,0,0.8);
 }
 
 .skillsBreakdown {
-
-    /*cursor:pointer;*/
-
     .skillInfo {
-
         text-align: center;
         width: 100%;
         display: block;
-        padding-bottom:2rem;
-        padding-top:2rem;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        position: relative;
+        cursor: pointer;
 
         @media(min-width:$breakpointTablet) {
             padding-bottom: 3rem;
             padding-top: 3rem;
         }
+
         @media(min-width:$breakpointDesktop) {
             padding-bottom: 4rem;
             padding-top: 4rem;
         }
-        
+
 
 
         ul {
@@ -37,7 +36,7 @@ $textColor: rgba(0,0,0,0.8);
         }
 
         h3 {
-            margin:0;
+            margin: 0;
         }
 
         @media (min-width: $breakpointTablet) {
@@ -54,7 +53,7 @@ $textColor: rgba(0,0,0,0.8);
             height: $skillCircleWidth;
             border-radius: 50%;
             color: white;
-            position:relative;
+            position: relative;
             margin: auto;
 
             .circleInner {
@@ -119,7 +118,35 @@ $textColor: rgba(0,0,0,0.8);
         }
 
         .skillBreakdown {
-            display:none;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -moz-transform-origin: 0 0;
+            -ms-transform-origin: 0 0;
+            -o-transform-origin: 0 0;
+            -webkit-transform-origin: 0 0;
+            transform-origin: 0% 0%;
+            -moz-transform: rotate(0) translate(-50%, -50%);
+            -ms-transform: rotate(0) translate(-50%, -50%);
+            -o-transform: rotate(0) translate(-50%, -50%);
+            -webkit-transform: rotate(0) translate(-50%, -50%);
+            transform: rotate(0) translate(-50%, -50%);
+            -moz-transition: transform 10s ease-in-out, opacity ease-in-out 0.5s;
+            -o-transition: transform 10s ease-in-out, opacity ease-in-out 0.5s;
+            -webkit-transition: transform 10s ease-in-out, opacity ease-in-out 0.5s;
+            transition: transform 10s ease-in-out, opacity ease-in-out 0.5s;
+        }
+
+        &:hover {
+            .skillBreakdown {
+                opacity: 1;
+                -webkit-transform: rotate(360deg) translate(-50%, -50%);
+                -moz-transform: rotate(360deg) translate(-50%, -50%);
+                -ms-transform: rotate(360deg) translate(-50%, -50%);
+                -o-transform: rotate(360deg) translate(-50%, -50%);
+                transform: rotate(360deg) translate(-50%, -50%);
+            }
         }
     }
 }
