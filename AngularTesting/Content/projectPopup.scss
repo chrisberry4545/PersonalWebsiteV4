@@ -23,6 +23,7 @@ $popUpBackgroundColor: white;
     -o-transition: width ease-in-out 1s;
     -webkit-transition: width ease-in-out 1s;
     transition: width ease-in-out 1s;
+    margin-bottom: 3%;
 
     &.selected {
         z-index: 2;

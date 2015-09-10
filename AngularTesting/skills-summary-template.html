@@ -5,11 +5,10 @@
                 <div class="circleInner">
                     <i class="fa {{s.icon}} fa-2x"></i>
                 </div>
+                <div class="skillDesc">
+                    <h3>{{s.name}}</h3>
+                </div>
             </div>
-            <div class="skillDesc">
-                <h3>{{s.name}}</h3>
-            </div>
-            <br />
             <div ng-if="s.skillbreakdown.length > 0">
                 <span ng-repeat="subskill in s.skillbreakdown">
                     {{subskill}}
