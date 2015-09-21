@@ -18,29 +18,29 @@ $popUpBackgroundColor: white;
     position: relative;
     z-index: 1;
     display: inline-block;
-    width: 100%;
+    width: 99%;
+    padding: 0.5%;
     -moz-transition: width ease-in-out 1s;
     -o-transition: width ease-in-out 1s;
     -webkit-transition: width ease-in-out 1s;
     transition: width ease-in-out 1s;
-    margin-bottom: 2%;
+    /*margin-bottom: 2%;*/
 
     &.selected {
         z-index: 2;
     }
 
     @media(min-width: $breakpointTablet) {
-        width:48%;
-        padding:1%;
+        width:49%;
     }
 
     @media(min-width: $breakpointDesktop) {
-        
-        width: 31%;
-        padding:1%;
-        &:nth-child(5n + 4), &:nth-child(5n + 5) {
+         
+        width: 32.33%;
+        /*padding:1%;*/
+        /*&:nth-child(5n + 4), &:nth-child(5n + 5) {
             width:48%;
-        }
+        }*/
     }
 
 
