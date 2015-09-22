@@ -46,7 +46,7 @@
 
         var bikeTrackerPebble = new ProjectElement(
             "London TFL Bike Point Tracker",
-            "An app for Pebble Smartwatches which uses TFL data to point the user in the direction of the nearest London bike point",
+            "An app for Pebble Smartwatches which uses TFL data to find the bike point nearest to the user, and show them an arrow pointing towards it.",
             [
 
             ],
@@ -62,7 +62,7 @@
 
         var gbc = new ProjectElement(
             "Great British Chefs",
-            "Working as part of a small team we delivered a whole new site design and custom built CMS solution which will allow Great British Chefs to release stunning content on a fast and responsive site. Some key parts of the sites I handled included:",
+            "Working as part of a small team we delivered a whole new site design and custom built CMS solution which will allow Great British Chefs to release stunning content on a fast and responsive site. My work included:",
             [
                 "User registration and login (with Facebook integration)",
                 "A complete user favouriting system (binder) which utilised HTML5 local storage alongside server storage to keep the site feeling fast",
@@ -71,7 +71,8 @@
                 "Page recirculation",
                 "Custom video players and image galleries",
                 "Fast recipe filters",
-                "Page templates (Recipes, Recipe Collections, Restaurants etc.)"
+                "Page templates (Recipes, Recipe Collections, Restaurants etc.)",
+                "Mentoring Junior staff"
             ],
             "Images/GBC/GBCHome.png",
             "Great British Chefs Homepage",

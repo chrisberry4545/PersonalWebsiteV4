@@ -1,16 +1,22 @@
-﻿$breakpointTablet: 500px;
-$breakpointDesktop: 1000px;
+﻿$breakpointSM: 800px;
+$breakpointMD: 1000px;
+$breakpointLG: 1300px;
 
 $popUpTextColor: rgba(0,0,0,0.8);
 $popUpBackgroundColor: white;
 
 .portfolioItems {
-    max-width: 1400px;
     margin: auto;
-}
-
-.raised1 {
-    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.26);
+    
+    max-width:600px;
+    @media(min-width:$breakpointSM) {
+    }
+    @media(min-width:$breakpointMD) {
+        max-width:900px;
+    }
+    @media(min-width:$breakpointLG) {
+        max-width: 1400px;
+    }
 }
 
 
@@ -18,25 +24,25 @@ $popUpBackgroundColor: white;
     position: relative;
     z-index: 1;
     display: inline-block;
-    width: 99%;
+    width: 98%;
+    margin:0.5%;
     padding: 0.5%;
-    -moz-transition: width ease-in-out 1s;
-    -o-transition: width ease-in-out 1s;
-    -webkit-transition: width ease-in-out 1s;
-    transition: width ease-in-out 1s;
-    /*margin-bottom: 2%;*/
+    background:$popUpBackgroundColor;
+    -moz-transition: transform ease-in-out 1s, height ease-in-out 1s;
+    -o-transition: transform ease-in-out 1s, height ease-in-out 1s;
+    -webkit-transition: transform ease-in-out 1s, height ease-in-out 1s;
+    transition: transform ease-in-out 1s, height ease-in-out 1s;
 
     &.selected {
         z-index: 2;
     }
 
-    @media(min-width: $breakpointTablet) {
-        width:49%;
+    @media(min-width: $breakpointMD) {
+        width:48%;
     }
 
-    @media(min-width: $breakpointDesktop) {
-         
-        width: 32.33%;
+    @media(min-width: $breakpointLG) {
+        width: 31.33%;
         /*padding:1%;*/
         /*&:nth-child(5n + 4), &:nth-child(5n + 5) {
             width:48%;
@@ -62,12 +68,23 @@ $popUpBackgroundColor: white;
 
         h2 {
             font-size:1rem;
+            font-weight:500;
         }
 
 
         .popUpDetailsInner {
             padding-top:1rem;
             padding-bottom:1rem;
+
+            li, p {
+                font-weight:300;
+                color:rgba(0,0,0,0.9);
+            }
+
+            ul {
+                padding-left: 20px;
+            }
+
         }
 
         .popUpSticker {
@@ -100,7 +117,7 @@ $popUpBackgroundColor: white;
     }
 }
 
-$backgroundColor: rgba(0,0,0,0.8);
+$backgroundColor: rgba(0,0,0,0.55);
 .popUpBackground {
     border-radius: 50%;
     background: $backgroundColor;
@@ -135,10 +152,6 @@ $backgroundColor: rgba(0,0,0,0.8);
 .popupClickable {
     cursor: pointer;
     z-index: 10;
-    -moz-transition: transform ease-in-out 1s, height ease-in-out 1s;
-    -o-transition: transform ease-in-out 1s, height ease-in-out 1s;
-    -webkit-transition: transform ease-in-out 1s, height ease-in-out 1s;
-    transition: transform ease-in-out 1s, height ease-in-out 1s;
 
     .imgHolder {
         padding-bottom: 62.5%;
@@ -186,7 +199,7 @@ $backgroundColor: rgba(0,0,0,0.8);
             transition: opacity ease-in-out 0.5s, transform ease-in-out 0.5s;
         }
 
-        @media (min-width:$breakpointDesktop) {
+        @media (min-width:$breakpointSM) {
 
             .overlayTitle {
                 opacity: 0;
@@ -236,11 +249,11 @@ $backgroundColor: rgba(0,0,0,0.8);
     &.active {
         display: block;
         z-index: 10;
-        -moz-transform: scale(5);
-        -ms-transform: scale(5);
-        -o-transform: scale(5);
-        -webkit-transform: scale(5);
-        transform: scale(5);
+        -moz-transform: scale(3);
+        -ms-transform: scale(3);
+        -o-transform: scale(3);
+        -webkit-transform: scale(3);
+        transform: scale(3);
     }
 }
 

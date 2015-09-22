@@ -1,75 +1,32 @@
 ﻿<div class="home">
 
-    <nav class="navBar raised1">
-        <div class="maxWidth">
-            <div class="cutoutHolder">
-                <cutoutname color="rgb(41,41,41)" animate="false" width="50"></cutoutname>
-            </div>
-            <div class="navBarInner">
-                <a href="#"
-                   offset="120"
-                   scroll-to="projects">
-                    Projects
-                </a>
-                <a href="#"
-                   offset="120"
-                   scroll-to="skills">
-                    Key skills
-                </a>
-                <a href="https://github.com/chrisberry4545" target="_blank">
-                    GitHub
-                </a>
-            </div>
-        </div>
-    </nav>
-
-    <!--<div class="fullScreen heroImage">
-
-        <div class="centered startDisplay">
+    <nav class="navBar raised3">
+        <div class="centerText">
             <div class="cutoutHolder">
                 <cutoutname color="rgb(41,41,41)" animate="true" width="200"></cutoutname>
             </div>
 
-            <h1>
+            <h1 class="title">
                 Chris Berry
             </h1>
             <h2>
-                Web Developer - London
+                Web Developer
             </h2>
-
         </div>
 
-        <a href="#" scroll-to="projects" class="mainBtn toContentButton raised1">
-            <i class="fa fa-chevron-down fa-1x centered"></i>
-        </a>
-
-
-    </div>
-
-     <div class="divider maxWidth"></div>-->
-    <div id="projects" class="projectWrapper">
-        <div class="hidden" when-visible="vm.animateElementIn" when-not-visible="vm.animateElementOut">
-            <!--<h2 class="sectionHeader projectHeader">Projects</h2>-->
-            <project-popout projects="vm.projects"></project-popout>
-        </div>
-    </div>
-
-
-     <div class="divider maxWidth"></div>
-    <section id="skills" class="maxWidth">
-        <div class="marginBetweenBlocks hidden" when-visible="vm.animateElementIn" when-not-visible="vm.animateElementOut">
-            <h2 class="sectionHeader">Key skills</h2>
-            <skills-summary title="'Key skills'" skills="vm.skills"></skills-summary>
-        </div>
-    </section>
-
-    <div class="footer">
-        <div class="maxWidth">
+        <div class="centerText contact">
+            <a href="https://github.com/chrisberry4545">
+                GitHub
+            </a>
+            <br />
             <a href="mailto:chrisberry4545@googlemail.com">
-                Chris Berry <br />
                 chrisberry4545@googlemail.com
             </a>
         </div>
+    </nav>
+
+    <div id="projects" class="projectWrapper">
+        <project-popout projects="vm.projects"></project-popout>
     </div>
 
 </div>
