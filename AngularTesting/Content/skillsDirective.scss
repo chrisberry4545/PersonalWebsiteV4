@@ -55,6 +55,7 @@ $textColor: rgba(0,0,0,0.8);
             color: white;
             position: relative;
             margin: auto;
+            z-index:2;
 
             .circleInner {
                 position: absolute;
@@ -115,9 +116,11 @@ $textColor: rgba(0,0,0,0.8);
             -o-transform: translateY(-50%);
             -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
+            z-index:2;
         }
 
         .skillBreakdown {
+            z-index:0;
             opacity: 0;
             position: absolute;
             top: 50%;
@@ -127,25 +130,25 @@ $textColor: rgba(0,0,0,0.8);
             -o-transform-origin: 0 0;
             -webkit-transform-origin: 0 0;
             transform-origin: 0% 0%;
-            -moz-transform: rotate(0) translate(-50%, -50%);
-            -ms-transform: rotate(0) translate(-50%, -50%);
-            -o-transform: rotate(0) translate(-50%, -50%);
-            -webkit-transform: rotate(0) translate(-50%, -50%);
-            transform: rotate(0) translate(-50%, -50%);
-            -moz-transition: transform 10s ease-in-out, opacity ease-in-out 0.5s;
-            -o-transition: transform 10s ease-in-out, opacity ease-in-out 0.5s;
-            -webkit-transition: transform 10s ease-in-out, opacity ease-in-out 0.5s;
-            transition: transform 10s ease-in-out, opacity ease-in-out 0.5s;
+            -moz-transform: scale(0.25,0.25) translate(-50%, -50%);
+            -ms-transform: scale(0.25,0.25) translate(-50%, -50%);
+            -o-transform: scale(0.25,0.25) translate(-50%, -50%);
+            -webkit-transform: scale(0.25,0.25) translate(-50%, -50%);
+            transform: scale(0.25,0.25) translate(-50%, -50%);
+            -moz-transition: transform 1s ease-in-out, opacity ease-in-out 0.5s;
+            -o-transition: transform 1s ease-in-out, opacity ease-in-out 0.5s;
+            -webkit-transition: transform 1s ease-in-out, opacity ease-in-out 0.5s;
+            transition: transform 1s ease-in-out, opacity ease-in-out 0.5s;
         }
 
         &:hover {
             .skillBreakdown {
                 opacity: 1;
-                -webkit-transform: rotate(360deg) translate(-50%, -50%);
-                -moz-transform: rotate(360deg) translate(-50%, -50%);
-                -ms-transform: rotate(360deg) translate(-50%, -50%);
-                -o-transform: rotate(360deg) translate(-50%, -50%);
-                transform: rotate(360deg) translate(-50%, -50%);
+                -moz-transform: scale(1,1) translate(-50%,-50%);
+                -ms-transform: scale(1,1) translate(-50%,-50%);
+                -o-transform: scale(1,1) translate(-50%,-50%);
+                -webkit-transform: scale(1,1) translate(-50%,-50%);
+                transform: scale(1,1) translate(-50%,-50%);
             }
         }
     }

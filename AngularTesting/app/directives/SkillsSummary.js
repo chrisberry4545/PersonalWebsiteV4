@@ -4,6 +4,8 @@
         .directive('skillsSummary',  [function () {
 
             function link(scope, element, attrs) {
+
+
                 angular.element(document).ready(function () {
                     var skillCanvases = document.getElementsByClassName('skillCanvas');
 
@@ -15,25 +17,35 @@
                         var currentSkill = scope.skills[i];
                         var numberOfSides = currentSkill.skillbreakdown.length,
                             size = 100,
-                            Xcenter = 100,
-                            Ycenter = 100;
+                            Xcenter = currentCanvas.width / 2,
+                            Ycenter = currentCanvas.height / 2;
 
                         ctx.textAlign = "center";
-                        ctx.font = "20px Georgia";
+                        ctx.font = "14px 'Roboto', sans-serif";
                         ctx.beginPath();
                         ctx.moveTo(Xcenter + size * Math.cos(0), Ycenter + size * Math.sin(0));
+
+                        var adjustmentValue = 20;
 
                         for (var k = 0; k < numberOfSides; k++) {
                             var leftVal = Xcenter + size * Math.cos(k * 2 * Math.PI / numberOfSides);
                             var rightVal = Ycenter + size * Math.sin(k * 2 * Math.PI / numberOfSides);
-                            ctx.lineTo(leftVal, rightVal);
                             ctx.fillText(currentSkill.skillbreakdown[k], leftVal, rightVal);
+                            if (leftVal != Xcenter) {
+                                leftVal = leftVal < Xcenter ? leftVal + adjustmentValue : leftVal - adjustmentValue;
+                            }
+                            if (rightVal != Ycenter) {
+                                rightVal = rightVal < Ycenter ? rightVal + adjustmentValue : rightVal - adjustmentValue;
+                            }
+
+                            ctx.lineTo(leftVal, rightVal);
                             ctx.lineTo(Xcenter, Ycenter);
                         }
 
-                        ctx.strokeStyle = "#000000";
+                        ctx.strokeStyle = "rgba(0,0,0,0.6)";
                         ctx.lineWidth = 1;
                         ctx.stroke();
+
 
                     }
                 });

@@ -22,7 +22,7 @@
                             scope.activeImgEl = imgEl;
                             var boundingRect = imgEl.getBoundingClientRect();
                             var translateLeft = (window.innerWidth / 2) - boundingRect.left - (boundingRect.width / 2);
-                            var translateTop = -boundingRect.top + 50;
+                            var translateTop = -boundingRect.top + 75;
                             scope.activeProj.transform =
                                 'translate(' + translateLeft + 'px, ' + translateTop + 'px)';
 
