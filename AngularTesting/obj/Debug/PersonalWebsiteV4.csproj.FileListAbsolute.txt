@@ -1,0 +1,6 @@
+C:\Users\Chris\Source\Repos\PersonalWebsiteV42\AngularTesting\bin\AngularTesting.dll.config
+C:\Users\Chris\Source\Repos\PersonalWebsiteV42\AngularTesting\bin\AngularTesting.dll
+C:\Users\Chris\Source\Repos\PersonalWebsiteV42\AngularTesting\bin\AngularTesting.pdb
+C:\Users\Chris\Source\Repos\PersonalWebsiteV42\AngularTesting\obj\Debug\AngularTesting.dll
+C:\Users\Chris\Source\Repos\PersonalWebsiteV42\AngularTesting\obj\Debug\AngularTesting.pdb
+C:\Users\Chris\Source\Repos\PersonalWebsiteV42\AngularTesting\obj\Debug\PersonalWebsiteV4.csprojResolveAssemblyReference.cache
