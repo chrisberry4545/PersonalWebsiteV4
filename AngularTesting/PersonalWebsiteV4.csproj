@@ -57,6 +57,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="apple-touch-icon-114x114.png" />
+    <Content Include="apple-touch-icon-120x120.png" />
+    <Content Include="apple-touch-icon-144x144.png" />
+    <Content Include="apple-touch-icon-152x152.png" />
+    <Content Include="apple-touch-icon-57x57.png" />
+    <Content Include="apple-touch-icon-60x60.png" />
+    <Content Include="apple-touch-icon-72x72.png" />
+    <Content Include="apple-touch-icon-76x76.png" />
     <Content Include="app\directives\anchor_smooth_scroll.min.js" />
     <Content Include="app\directives\ProjectPopout.js" />
     <Content Include="app\directives\SkillsSummary.js" />
@@ -65,6 +73,7 @@
     <Content Include="app\home\HomeController.js" />
     <Content Include="app\home\HomeModule.js" />
     <Content Include="app\projects\ProjectsSpinnerDirective.js" />
+    <Content Include="code.txt" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\projectPopup.css">
       <DependentUpon>projectPopup.scss</DependentUpon>
@@ -77,6 +86,13 @@
     <Content Include="Content\skillsDirective.css" />
     <Content Include="Content\skillsDirective.min.css" />
     <Content Include="cutoutname-template.html" />
+    <Content Include="favicon-128.png" />
+    <Content Include="favicon-16x16.png" />
+    <Content Include="favicon-196x196.png" />
+    <Content Include="favicon-32x32.png" />
+    <Content Include="favicon-96x96.png" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Images\AnimalAdjectives\AATabletScreen.png" />
     <Content Include="Images\AnimalAdjectives\AATabletScreenold.png" />
     <Content Include="Images\AnimalAdjectives\CrustyBirmanScreen.png" />
@@ -109,6 +125,11 @@
     <Content Include="Images\Timeline\cogs.svg" />
     <Content Include="Images\Timeline\university.svg" />
     <Content Include="Images\Timeline\web.svg" />
+    <Content Include="mstile-144x144.png" />
+    <Content Include="mstile-150x150.png" />
+    <Content Include="mstile-310x150.png" />
+    <Content Include="mstile-310x310.png" />
+    <Content Include="mstile-70x70.png" />
     <Content Include="project-popout-template.html" />
     <Content Include="project-spinner-template.html" />
     <Content Include="Content\app.scss" />
@@ -126,6 +147,12 @@
     <Content Include="Scripts\angular-scroll-animate.min.js.map">
       <DependentUpon>angular-scroll-animate.min.js</DependentUpon>
     </Content>
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <None Include="Properties\PublishProfiles\filepub.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
