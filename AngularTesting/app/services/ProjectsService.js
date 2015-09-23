@@ -1,9 +1,7 @@
 ﻿(function () {
     'use strict';
 
-    angular.module('projects', []);
-
-    angular.module('projects')
+    angular.module('projects', [])
            .service('projectsService', ['$q', ProjectsService]);
 
     function ProjectsService($q) {

@@ -1,6 +1,29 @@
 ﻿(function () {
 
+
+
     angular.module('projectPopoutDirective', [])
+        .directive('ngLoad', ['$parse', function ($parse) {
+    
+        return {
+            restrict: 'A',
+            compile: function ($element, attr) {
+                var fn = $parse(attr['ngLoad']);
+    
+                return function (scope, element, attr) {
+                    element.on('load', function (event) {
+                        scope.$apply(function () {
+                            fn(scope, { $event: event });
+                        });
+                    });
+                };
+    
+            }
+        };
+    
+    }]);
+
+    angular.module('projectPopoutDirective')
         .directive('projectPopout', [function () {
 
             function link(scope, element, attrs) {
@@ -45,23 +68,21 @@
                         }, animTime);
                     }
 
-                    var projWithLoadedImages = [];
-                    var imageToLoad = 0;
                     scope.imageLoaded = function () {
-                        projWithLoadedImages.push(this.proj);
+                        this.proj.imgIsReady = true;
                     }
 
-                    var timeBetweenImgLoads = scope.timebetweenimgloads;
-
+                    var nextProjToLoad = 0;
+                    var timeBetweenImgLoads = parseInt(scope.timebetweenimgloads, 10);
 
                     setTimeout(function () {
 
-
                         var repeatLoadImages = setInterval(function () {
-                            if (imageToLoad < scope.projects.length) {
-                                if (projWithLoadedImages.length > imageToLoad) {
-                                    projWithLoadedImages[imageToLoad].imgIsLoaded = true;
-                                    imageToLoad++;
+                            if (nextProjToLoad < scope.projects.length) {
+                                var projToExamine = scope.projects[nextProjToLoad];
+                                if (projToExamine.imgIsReady) {
+                                    nextProjToLoad++;
+                                    projToExamine.imgIsLoaded = true;
                                     scope.$apply();
                                 }
                             } else {
@@ -83,7 +104,7 @@
                     animstartdelay: '=animstartdelay'
                 },
                 compile: compile,
-                templateUrl: 'project-popout-template.html'
+                templateUrl: '/app/directives/projectpopout/project-popout-template.html'
             };
         }]);
 

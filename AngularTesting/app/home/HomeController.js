@@ -1,9 +1,6 @@
 ﻿(function () {
 
-    angular.module('home', []);
-
-    angular
-         .module('home')
+    angular.module('home', [])
          .controller('HomeController',
          ['cutoutnameDirective',
              'projectPopoutDirective', 'projectsService',

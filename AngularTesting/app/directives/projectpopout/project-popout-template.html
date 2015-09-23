@@ -4,7 +4,7 @@
         </div>
         <div class="popupClickable">
             <div class="imgHolder">
-                <img ng-init="imageLoaded()" class="projPopoutImg" src="{{proj.image}}" alt={{proj.imageAlt}} />
+                <img  ng-load="imageLoaded()" class="projPopoutImg" src="{{proj.image}}" alt={{proj.imageAlt}} />
                 <div class="imgOverlay"></div>
                 <div class="overlayTitle">{{proj.title}}</div>
             </div>

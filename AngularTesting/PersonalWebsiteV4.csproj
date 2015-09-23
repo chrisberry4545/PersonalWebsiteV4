@@ -65,11 +65,26 @@
     <Content Include="apple-touch-icon-60x60.png" />
     <Content Include="apple-touch-icon-72x72.png" />
     <Content Include="apple-touch-icon-76x76.png" />
-    <Content Include="app\directives\ProjectPopout.js" />
-    <Content Include="app\directives\SkillsSummary.js" />
-    <Content Include="app\directives\CutoutName.js" />
+    <Content Include="app\directives\cutoutname\CutoutName.min.js">
+      <DependentUpon>CutoutName.js</DependentUpon>
+    </Content>
+    <Content Include="app\directives\projectpopout\ProjectPopout.js" />
+    <Content Include="app\directives\projectpopout\ProjectPopout.min.js">
+      <DependentUpon>ProjectPopout.js</DependentUpon>
+    </Content>
+    <Content Include="archive\directives\SkillsSummary.js" />
+    <Content Include="app\directives\cutoutname\CutoutName.js" />
+    <Content Include="archive\directives\SkillsSummary.min.js">
+      <DependentUpon>SkillsSummary.js</DependentUpon>
+    </Content>
     <Content Include="app\home\home.html" />
     <Content Include="app\home\HomeController.js" />
+    <Content Include="app\home\HomeController.min.js">
+      <DependentUpon>HomeController.js</DependentUpon>
+    </Content>
+    <Content Include="app\services\ProjectsService.min.js">
+      <DependentUpon>ProjectsService.js</DependentUpon>
+    </Content>
     <Content Include="archive\projects\ProjectsSpinnerDirective.js" />
     <Content Include="code.txt" />
     <Content Include="Content\font-awesome.min.css" />
@@ -83,7 +98,7 @@
     <Content Include="archive\Content\projectSpinner.min.css" />
     <Content Include="archive\Content\skillsDirective.css" />
     <Content Include="archive\Content\skillsDirective.min.css" />
-    <Content Include="cutoutname-template.html" />
+    <Content Include="app\directives\cutoutname\cutoutname-template.html" />
     <Content Include="favicon-128.png" />
     <Content Include="favicon-16x16.png" />
     <Content Include="favicon-196x196.png" />
@@ -128,8 +143,8 @@
     <Content Include="mstile-310x150.png" />
     <Content Include="mstile-310x310.png" />
     <Content Include="mstile-70x70.png" />
-    <Content Include="project-popout-template.html" />
-    <Content Include="project-spinner-template.html" />
+    <Content Include="app\directives\projectpopout\project-popout-template.html" />
+    <Content Include="archive\projects\project-spinner-template.html" />
     <Content Include="Content\app.scss" />
     <Content Include="Content\app.css.map">
       <DependentUpon>app.css</DependentUpon>
@@ -150,6 +165,21 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="app\directives\cutoutname\CutoutName.min.js.map">
+      <DependentUpon>CutoutName.min.js</DependentUpon>
+    </Content>
+    <Content Include="app\directives\projectpopout\ProjectPopout.min.js.map">
+      <DependentUpon>ProjectPopout.min.js</DependentUpon>
+    </Content>
+    <Content Include="archive\directives\SkillsSummary.min.js.map">
+      <DependentUpon>SkillsSummary.min.js</DependentUpon>
+    </Content>
+    <Content Include="app\services\ProjectsService.min.js.map">
+      <DependentUpon>ProjectsService.min.js</DependentUpon>
+    </Content>
+    <Content Include="app\home\HomeController.min.js.map">
+      <DependentUpon>HomeController.min.js</DependentUpon>
+    </Content>
     <None Include="Properties\PublishProfiles\filepub.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -179,7 +209,7 @@
     <Content Include="Scripts\angular\angular.js" />
     <Content Include="Scripts\angular\angular.min.js" />
     <Content Include="Scripts\canvasv5.js" />
-    <Content Include="skills-summary-template.html" />
+    <Content Include="archive\directives\skills-summary-template.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
