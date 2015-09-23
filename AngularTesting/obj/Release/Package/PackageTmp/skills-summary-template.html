@@ -1,0 +1,21 @@
+﻿<div class="skillSection">
+    <div class="skillsBreakdown">
+        <div ng-repeat="s in skills" class="skillInfo">
+            <div class="skillCircle raised1">
+                <div class="circleInner">
+                    <i class="fa {{s.icon}} fa-2x"></i>
+                </div>
+            </div>
+            <div class="skillDesc">
+                <h3>{{s.name}}</h3>
+            </div>
+            <div class="skillBreakdown">
+                <!--<span ng-repeat="subskill in s.skillbreakdown">
+                    {{subskill}}
+                    <span ng-if="$index != s.skillbreakdown.length - 1">,</span>
+                </span>-->
+                <canvas class="skillCanvas" width="300" height="300"></canvas>
+            </div>
+        </div>
+    </div>
+</div>

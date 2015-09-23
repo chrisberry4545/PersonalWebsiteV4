@@ -1,0 +1,26 @@
+﻿<div ng-repeat="proj in projects" class="projCard"
+     ng-class="{current: $index == selectedProject}"
+     style="transform: {{proj.transform}}">
+    <h2>
+        {{proj.title}}
+    </h2>
+    <h3>
+        <span ng-repeat="skill in proj.skills">
+            {{skill}}<span ng-if="$index != proj.skills.length - 1">, </span>
+        </span>
+    </h3>
+    <p>
+        {{proj.description}}
+    </p>
+
+    <img class="projImg" src="{{proj.image}}" alt="{{proj.imageAlt}}"/>
+
+</div>
+
+<div ng-show="useNextButton" class="nextProjectButtonWrapper">
+    <button class="nextProjectButton">Next Project</button>
+</div>
+<div ng-show="usePreviousButton" class="prevProjectButtonWrapper">
+    <button class="previousProjectButton">Prev Project</button>
+</div>
+
