@@ -7,10 +7,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
     <link href="Content/projectPopup.min.css" rel="stylesheet" />
-    <link href="Content/skillsDirective.min.css" rel="stylesheet" />
     <link href="Content/font-awesome.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/Content/app.min.css" />
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
 <body ng-app="myApp" layout="row">
 
@@ -19,24 +17,14 @@
     <script src="/Scripts/canvasv5.js"></script>
     <script src="/Scripts/angular/angular.min.js"></script>
     <script src="/Scripts/angular/angular-route.min.js"></script>
-    <script src="Scripts/angular-scroll-animate.min.js"></script>
-    <script src="app/home/CutoutName.js"></script>
-    <script src="app/home/HomeModule.js"></script>
+    <script src="app/directives/CutoutName.js"></script>
+    <script src="/app/services/ProjectsService.js"></script>
+    <script src="/app/directives/ProjectPopout.js"></script>
     <script src="app/home/HomeController.js"></script>
-    <script src="/app/directives/anchor_smooth_scroll.min.js"></script>
-    <script src="app/directives/SkillsSummary.js"></script>
-    <script src="/app/projects/ProjectsSpinnerDirective.js"></script>
-    <script src="/app/projects/ProjectsModule.js"></script>
-    <script src="/app/projects/ProjectController.js"></script>
-    <script src="/app/projects/ProjectDetailController.js"></script>
-    <script src="/app/projects/ProjectsService.js"></script>
-    <script src="/app/directives/projectPopout.js"></script>
     <script type="text/javascript">
 
         var myApp = angular
-            .module('myApp', ['angular-scroll-animate', 'ngRoute', 'smoothScroll',
-                'skillsSummaryDirective', 'projectPopoutDirective',
-                'projectSpinnerDirective', 'projects',
+            .module('myApp', ['ngRoute', 'projectPopoutDirective', 'projects',
                 'cutoutnameDirective', 'home']);
 
         myApp.config(['$routeProvider',
@@ -45,16 +33,6 @@
                 when('/', {
                     templateUrl: 'app/home/home.html',
                     controller: 'HomeController',
-                    controllerAs: 'vm'
-                }).
-                when('/projects', {
-                    templateUrl: 'app/projects/view/project.html',
-                    controller: 'ProjectController',
-                    controllerAs: 'vm'
-                }).
-                when('/projects/:projectId', {
-                    templateUrl: 'app/projects/view/project.html',
-                    controller: 'ProjectDetailController',
                     controllerAs: 'vm'
                 }).
                 otherwise({
