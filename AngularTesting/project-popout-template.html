@@ -1,10 +1,10 @@
 ﻿<section class="portfolioItems">
-    <div ng-repeat="proj in projects" style="transform:{{proj.transform}}" ng-click="openPopup($event)" class="popUpWrapper" ng-class="{'selected' : proj.IsActive, 'selectedAnimationFinished' : proj.ShowDetails }">
+    <div ng-repeat="proj in projects" style="transform:{{proj.transform}}" ng-click="openPopup($event)" class="popUpWrapper" ng-class="{'selected' : proj.IsActive, 'selectedAnimationFinished' : proj.ShowDetails, 'fadedIn' : proj.imgIsLoaded }">
         <div ng-click="closePopup()" class="popUpBackground">
         </div>
         <div class="popupClickable">
             <div class="imgHolder">
-                <img src="{{proj.image}}" alt={{proj.imageAlt}} />
+                <img ng-init="imageLoaded()" class="projPopoutImg" src="{{proj.image}}" alt={{proj.imageAlt}} />
                 <div class="imgOverlay"></div>
                 <div class="overlayTitle">{{proj.title}}</div>
             </div>

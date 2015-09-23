@@ -115,16 +115,32 @@ $popUpBackgroundColor: white;
             }
         }
     }
+
+    
+    .projPopoutImg {
+        opacity: 0;
+        -moz-transition: opacity ease-in-out 1s;
+        -o-transition: opacity ease-in-out 1s;
+        -webkit-transition: opacity ease-in-out 1s;
+        transition: opacity ease-in-out 1s;
+    }
+    &.fadedIn {
+        .projPopoutImg {
+            opacity:1;
+        }
+    }
+
 }
 
 $backgroundColor: rgba(0,0,0,0.55);
 .popUpBackground {
+    opacity:0;
     border-radius: 50%;
     background: $backgroundColor;
-    -moz-transition: transform ease-in-out 1s;
-    -o-transition: transform ease-in-out 1s;
-    -webkit-transition: transform ease-in-out 1s;
-    transition: transform ease-in-out 1s;
+    -moz-transition: transform ease-in-out 1s, opacity ease-in-out 0.75s;
+    -o-transition: transform ease-in-out 1s, opacity ease-in-out 0.75s;
+    -webkit-transition: transform ease-in-out 1s, opacity ease-in-out 0.75s;
+    transition: transform ease-in-out 1s, opacity ease-in-out 0.75s;
     width: 150px;
     height: 150px;
     z-index: -1;
@@ -157,7 +173,7 @@ $backgroundColor: rgba(0,0,0,0.55);
         padding-bottom: 62.5%;
         position: relative;
 
-        img, .imgOverlay {
+        .projPopoutImg, .imgOverlay {
             position: absolute;
             top: 50%;
             left: 0;
@@ -182,6 +198,7 @@ $backgroundColor: rgba(0,0,0,0.55);
         $overlayTitleMove: 50px;
 
         .overlayTitle {
+            font-weight: 300;
             color: white;
             position: absolute;
             top: 50%;
@@ -229,6 +246,7 @@ $backgroundColor: rgba(0,0,0,0.55);
                 }
             }
         }
+
     }
 }
 
@@ -291,6 +309,7 @@ $backgroundColor: rgba(0,0,0,0.55);
 
 .selected {
     .popUpBackground {
+        opacity:1;
         -moz-transform: translate(-50%, -50%) scale(24);
         -ms-transform: translate(-50%, -50%) scale(24);
         -o-transform: translate(-50%, -50%) scale(24);

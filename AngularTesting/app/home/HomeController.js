@@ -27,9 +27,7 @@
         projectsService
           .loadAllProjects()
           .then(function (projects) {
-              vm.projects = projects//;.slice(0, 3);
-              //vm.projects2 = projects.slice(3, projects.length);
-              //vm.projects3 = projects.slice(6, projects.length);
+              vm.projects = projects
           });
 
         projectsService.loadAllKeySkills()

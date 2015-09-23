@@ -44,13 +44,43 @@
                             scope.$apply();
                         }, animTime);
                     }
+
+                    var projWithLoadedImages = [];
+                    var imageToLoad = 0;
+                    scope.imageLoaded = function () {
+                        projWithLoadedImages.push(this.proj);
+                    }
+
+                    var timeBetweenImgLoads = scope.timebetweenimgloads;
+
+
+                    setTimeout(function () {
+
+
+                        var repeatLoadImages = setInterval(function () {
+                            if (imageToLoad < scope.projects.length) {
+                                if (projWithLoadedImages.length > imageToLoad) {
+                                    projWithLoadedImages[imageToLoad].imgIsLoaded = true;
+                                    imageToLoad++;
+                                    scope.$apply();
+                                }
+                            } else {
+                                clearInterval(this);
+                            }
+                        }, parseInt(timeBetweenImgLoads, 10));
+
+
+                    }, parseInt(scope.animstartdelay, 10));
+
                 };
             }
 
             return {
                 link: link,
                 scope: {
-                    projects: '=projects'
+                    projects: '=projects',
+                    timebetweenimgloads: '=timebetweenimgloads',
+                    animstartdelay: '=animstartdelay'
                 },
                 compile: compile,
                 templateUrl: 'project-popout-template.html'

@@ -54,7 +54,7 @@
                     if (scope.animate) {
                         setTimeout(function () {
                             animate(ctx, new Date().getTime(), 100);
-                        }, 500);
+                        }, parseInt(scope.timebeforeanimate));
                     } else {
                         animate(ctx, new Date().getTime(), 100000);
                     }
@@ -109,7 +109,8 @@
                 scope: {
                     width: '=width',
                     animate: '=animate',
-                    color: '=color'
+                    color: '=color',
+                    timebeforeanimate: '=timebeforeanimate'
                 },
                 templateUrl: 'cutoutname-template.html'
             };
