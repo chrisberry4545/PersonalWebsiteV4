@@ -9,6 +9,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <_PublishTargetUrl>C:\Users\Chris\Documents\Publish\PersonalSite</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
+    <File Include="app/bundledappscripts.min.js">
+      <publishTime>09/24/2015 21:50:18</publishTime>
+    </File>
     <File Include="app/directives/anchor_smooth_scroll.min.js">
       <publishTime>09/02/2015 22:27:30</publishTime>
     </File>
@@ -28,16 +31,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/23/2015 19:47:10</publishTime>
     </File>
     <File Include="app/directives/projectpopout/project-popout-template.html">
-      <publishTime>09/23/2015 22:29:10</publishTime>
+      <publishTime>09/24/2015 19:57:40</publishTime>
     </File>
     <File Include="app/directives/projectpopout/ProjectPopout.js">
-      <publishTime>09/23/2015 22:37:10</publishTime>
+      <publishTime>09/24/2015 20:06:10</publishTime>
     </File>
     <File Include="app/directives/projectpopout/ProjectPopout.min.js">
-      <publishTime>09/23/2015 22:37:10</publishTime>
+      <publishTime>09/24/2015 20:05:03</publishTime>
     </File>
     <File Include="app/directives/projectpopout/ProjectPopout.min.js.map">
-      <publishTime>09/23/2015 22:37:10</publishTime>
+      <publishTime>09/24/2015 20:06:10</publishTime>
     </File>
     <File Include="app/directives/SkillsSummary.js">
       <publishTime>09/22/2015 19:36:09</publishTime>
@@ -46,7 +49,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/23/2015 19:41:27</publishTime>
     </File>
     <File Include="app/home/home.html">
-      <publishTime>09/23/2015 22:45:18</publishTime>
+      <publishTime>09/23/2015 22:52:31</publishTime>
     </File>
     <File Include="app/home/HomeController.js">
       <publishTime>09/23/2015 22:07:30</publishTime>
@@ -79,13 +82,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/22/2015 11:47:50</publishTime>
     </File>
     <File Include="app/services/ProjectsService.js">
-      <publishTime>09/23/2015 22:07:37</publishTime>
+      <publishTime>09/24/2015 21:47:56</publishTime>
     </File>
     <File Include="app/services/ProjectsService.min.js">
-      <publishTime>09/23/2015 22:07:37</publishTime>
+      <publishTime>09/24/2015 21:47:51</publishTime>
     </File>
     <File Include="app/services/ProjectsService.min.js.map">
-      <publishTime>09/23/2015 22:07:37</publishTime>
+      <publishTime>09/24/2015 21:47:56</publishTime>
     </File>
     <File Include="app/users/UserController.js">
       <publishTime>08/18/2015 16:21:43</publishTime>
@@ -172,37 +175,121 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/22/2015 11:47:50</publishTime>
     </File>
     <File Include="bin/AngularTesting.dll">
-      <publishTime>09/23/2015 22:13:03</publishTime>
+      <publishTime>09/24/2015 21:47:58</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>09/24/2015 20:15:49</publishTime>
+    </File>
+    <File Include="bin/EcmaScript.NET.dll">
+      <publishTime>09/24/2015 20:24:14</publishTime>
+    </File>
+    <File Include="bin/Iesi.Collections.dll">
+      <publishTime>09/24/2015 20:24:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>09/24/2015 20:15:49</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>09/24/2015 20:15:50</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>09/24/2015 20:15:50</publishTime>
+    </File>
+    <File Include="bin/Yahoo.Yui.Compressor.Build.MsBuild.dll">
+      <publishTime>09/24/2015 20:24:14</publishTime>
+    </File>
+    <File Include="bin/Yahoo.Yui.Compressor.dll">
+      <publishTime>09/24/2015 20:24:14</publishTime>
     </File>
     <File Include="code.txt">
       <publishTime>09/22/2015 23:17:02</publishTime>
     </File>
     <File Include="Content/app.css">
-      <publishTime>09/22/2015 21:55:56</publishTime>
+      <publishTime>09/24/2015 19:17:10</publishTime>
     </File>
     <File Include="Content/app.css.map">
-      <publishTime>09/22/2015 21:51:50</publishTime>
+      <publishTime>09/24/2015 19:18:45</publishTime>
     </File>
     <File Include="Content/app.min.css">
-      <publishTime>09/22/2015 21:55:56</publishTime>
+      <publishTime>09/24/2015 19:17:10</publishTime>
     </File>
     <File Include="Content/app.scss">
-      <publishTime>09/22/2015 21:55:56</publishTime>
+      <publishTime>09/24/2015 19:18:45</publishTime>
+    </File>
+    <File Include="Content/bundledcss.min.css">
+      <publishTime>09/24/2015 21:50:18</publishTime>
+    </File>
+    <File Include="Content/Favicon/apple-touch-icon-114x114.png">
+      <publishTime>09/22/2015 23:17:00</publishTime>
+    </File>
+    <File Include="Content/Favicon/apple-touch-icon-120x120.png">
+      <publishTime>09/22/2015 23:17:00</publishTime>
+    </File>
+    <File Include="Content/Favicon/apple-touch-icon-144x144.png">
+      <publishTime>09/22/2015 23:17:00</publishTime>
+    </File>
+    <File Include="Content/Favicon/apple-touch-icon-152x152.png">
+      <publishTime>09/22/2015 23:17:00</publishTime>
+    </File>
+    <File Include="Content/Favicon/apple-touch-icon-57x57.png">
+      <publishTime>09/22/2015 23:17:00</publishTime>
+    </File>
+    <File Include="Content/Favicon/apple-touch-icon-60x60.png">
+      <publishTime>09/22/2015 23:17:00</publishTime>
+    </File>
+    <File Include="Content/Favicon/apple-touch-icon-72x72.png">
+      <publishTime>09/22/2015 23:17:00</publishTime>
+    </File>
+    <File Include="Content/Favicon/apple-touch-icon-76x76.png">
+      <publishTime>09/22/2015 23:17:00</publishTime>
+    </File>
+    <File Include="Content/Favicon/favicon-128.png">
+      <publishTime>09/22/2015 23:17:00</publishTime>
+    </File>
+    <File Include="Content/Favicon/favicon-16x16.png">
+      <publishTime>09/22/2015 23:17:00</publishTime>
+    </File>
+    <File Include="Content/Favicon/favicon-196x196.png">
+      <publishTime>09/22/2015 23:17:00</publishTime>
+    </File>
+    <File Include="Content/Favicon/favicon-32x32.png">
+      <publishTime>09/22/2015 23:17:00</publishTime>
+    </File>
+    <File Include="Content/Favicon/favicon-96x96.png">
+      <publishTime>09/22/2015 23:17:00</publishTime>
+    </File>
+    <File Include="Content/Favicon/favicon.ico">
+      <publishTime>09/22/2015 23:17:02</publishTime>
+    </File>
+    <File Include="Content/Favicon/mstile-144x144.png">
+      <publishTime>09/22/2015 23:17:00</publishTime>
+    </File>
+    <File Include="Content/Favicon/mstile-150x150.png">
+      <publishTime>09/22/2015 23:17:00</publishTime>
+    </File>
+    <File Include="Content/Favicon/mstile-310x150.png">
+      <publishTime>09/22/2015 23:17:02</publishTime>
+    </File>
+    <File Include="Content/Favicon/mstile-310x310.png">
+      <publishTime>09/22/2015 23:17:02</publishTime>
+    </File>
+    <File Include="Content/Favicon/mstile-70x70.png">
+      <publishTime>09/22/2015 23:17:00</publishTime>
     </File>
     <File Include="Content/font-awesome.min.css">
       <publishTime>07/28/2015 09:44:48</publishTime>
     </File>
     <File Include="Content/projectPopup.css">
-      <publishTime>09/23/2015 21:16:06</publishTime>
+      <publishTime>09/24/2015 20:03:32</publishTime>
     </File>
     <File Include="Content/projectPopup.css.map">
-      <publishTime>09/23/2015 21:16:06</publishTime>
+      <publishTime>09/24/2015 20:03:23</publishTime>
     </File>
     <File Include="Content/projectPopup.min.css">
-      <publishTime>09/23/2015 21:16:06</publishTime>
+      <publishTime>09/24/2015 20:03:32</publishTime>
     </File>
     <File Include="Content/projectPopup.scss">
-      <publishTime>09/23/2015 21:16:05</publishTime>
+      <publishTime>09/24/2015 20:03:32</publishTime>
     </File>
     <File Include="Content/projectSpinner.css">
       <publishTime>08/31/2015 16:45:55</publishTime>
@@ -270,6 +357,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Images/AnimalAdjectives/AATabletScreen.png">
       <publishTime>08/29/2015 21:33:20</publishTime>
     </File>
+    <File Include="Images/AnimalAdjectives/AATabletScreen600x375.jpg">
+      <publishTime>09/24/2015 21:41:21</publishTime>
+    </File>
     <File Include="Images/AnimalAdjectives/AATabletScreenold.png">
       <publishTime>07/11/2015 20:21:58</publishTime>
     </File>
@@ -279,11 +369,17 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Images/Dissertation/monopolycombined.png">
       <publishTime>08/29/2015 22:26:17</publishTime>
     </File>
+    <File Include="Images/Dissertation/monopolycombined600x375.jpg">
+      <publishTime>09/24/2015 21:42:07</publishTime>
+    </File>
     <File Include="Images/Dissertation/monopolycombinedold.png">
       <publishTime>08/29/2015 20:31:28</publishTime>
     </File>
     <File Include="Images/GBC/GBCHome.png">
       <publishTime>08/29/2015 21:57:06</publishTime>
+    </File>
+    <File Include="Images/GBC/GBCHome600x375.jpg">
+      <publishTime>09/24/2015 21:42:48</publishTime>
     </File>
     <File Include="Images/GBC/GBCHomeBlurred.png">
       <publishTime>08/29/2015 17:26:17</publishTime>
@@ -312,6 +408,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Images/HouseOwage/houseOwageScreenshot1.png">
       <publishTime>08/29/2015 21:57:41</publishTime>
     </File>
+    <File Include="Images/HouseOwage/houseOwageScreenshot600x375.jpg">
+      <publishTime>09/24/2015 21:43:42</publishTime>
+    </File>
     <File Include="Images/HouseOwage/houseOwageScreenshotold.png">
       <publishTime>07/11/2015 18:13:29</publishTime>
     </File>
@@ -324,14 +423,23 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Images/Librarians/librariansTabletScreenshot1odl.png">
       <publishTime>07/11/2015 20:21:41</publishTime>
     </File>
+    <File Include="Images/Librarians/librariansTabletScreenshot600x375.jpg">
+      <publishTime>09/24/2015 21:44:24</publishTime>
+    </File>
     <File Include="Images/MTGMirror/draftSimScreenshot.png">
       <publishTime>08/29/2015 21:49:18</publishTime>
+    </File>
+    <File Include="Images/MTGMirror/draftSimScreenshot600x375.jpg">
+      <publishTime>09/24/2015 21:45:00</publishTime>
     </File>
     <File Include="Images/MTGMirror/draftSimScreenshotold.png">
       <publishTime>07/11/2015 20:34:32</publishTime>
     </File>
     <File Include="Images/Parabola/ParabolaTablet.png">
       <publishTime>08/29/2015 21:43:32</publishTime>
+    </File>
+    <File Include="Images/Parabola/ParabolaTablet600x375.jpg">
+      <publishTime>09/24/2015 21:45:42</publishTime>
     </File>
     <File Include="Images/Parabola/ParabolaTabletold.png">
       <publishTime>07/11/2015 20:33:11</publishTime>
@@ -341,6 +449,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Images/PebbleBikeTracker/londonbike.png">
       <publishTime>08/29/2015 22:00:24</publishTime>
+    </File>
+    <File Include="Images/PebbleBikeTracker/londonbike2.png">
+      <publishTime>09/23/2015 21:40:25</publishTime>
+    </File>
+    <File Include="Images/PebbleBikeTracker/londonbike600x375.jpg">
+      <publishTime>09/24/2015 21:46:09</publishTime>
     </File>
     <File Include="Images/PebbleBikeTracker/londonbikeold.png">
       <publishTime>08/10/2015 21:24:35</publishTime>
@@ -364,7 +478,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/11/2015 13:42:37</publishTime>
     </File>
     <File Include="index.html">
-      <publishTime>09/23/2015 22:37:41</publishTime>
+      <publishTime>09/24/2015 21:20:53</publishTime>
+    </File>
+    <File Include="MsBuild/Bundling.xml">
+      <publishTime>09/24/2015 21:22:27</publishTime>
     </File>
     <File Include="mstile-144x144.png">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -380,6 +497,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="mstile-70x70.png">
       <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>09/24/2015 20:24:17</publishTime>
     </File>
     <File Include="project-popout-template.html">
       <publishTime>09/23/2015 19:59:37</publishTime>
@@ -409,7 +529,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/16/2015 23:14:35</publishTime>
     </File>
     <File Include="Scripts/angular/angular.min.js">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/22/2015 11:28:00</publishTime>
+    </File>
+    <File Include="Scripts/bundledvendorscripts.min.js">
+      <publishTime>09/24/2015 21:50:18</publishTime>
     </File>
     <File Include="Scripts/canvasv5.js">
       <publishTime>09/23/2015 21:22:01</publishTime>
@@ -418,7 +541,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/22/2015 19:36:09</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>09/22/2015 22:05:06</publishTime>
+      <publishTime>09/24/2015 21:49:56</publishTime>
     </File>
   </ItemGroup>
 </Project>

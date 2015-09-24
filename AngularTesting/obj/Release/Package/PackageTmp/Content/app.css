@@ -111,7 +111,6 @@
   z-index: 2;
   background: white;
   width: 100vw;
-  height: 100vh;
 }
 
 @media (min-width: 800px) {
@@ -120,6 +119,7 @@
     left: 0;
     position: fixed;
     width: 16rem;
+    height: 100vh;
   }
 }
 
@@ -164,18 +164,25 @@
 
 .navBar h1, .navBar h2 {
   color: rgba(0, 0, 0, 0.8);
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .navBar .contact {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 800px) {
+  .navBar .contact {
+    position: absolute;
+    bottom: 2rem;
+    padding-bottom: 0;
+    left: 50%;
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
 }
 
 .navBar .contact a {

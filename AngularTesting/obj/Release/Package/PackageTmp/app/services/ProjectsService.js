@@ -50,7 +50,7 @@
             [
 
             ],
-            "Images/PebbleBikeTracker/londonbike.png",
+            "Images/PebbleBikeTracker/londonbike600x375.jpg",
             "Image of the app on pebble",
             null,
             null,
@@ -74,7 +74,7 @@
                 "Page templates (Recipes, Recipe Collections, Restaurants etc.)",
                 "Mentoring Junior staff"
             ],
-            "Images/GBC/GBCHome.png",
+            "Images/GBC/GBCHome600x375.jpg",
             "Great British Chefs Homepage",
             "http://www.greatbritishchefs.com",
             visitTheSiteStr,
@@ -87,7 +87,7 @@
             "House owage web app",
             "Application I created to manage money with my housemates. It has solved the problem we had of tracking who owes who and provides useful information like payment histories.",
             [],
-            "Images/HouseOwage/houseOwageScreenshot1.png",
+            "Images/HouseOwage/houseOwageScreenshot600x375.jpg",
             "Great British Chefs Homepage",
             null,
             null,
@@ -105,7 +105,7 @@
                 "Full music controls",
                 "Tracks continue to play in a service when user leaves the app and can be accessed from the phone menu"
             ],
-            "Images/Librarians/librariansTabletScreenshot1.png",
+            "Images/Librarians/librariansTabletScreenshot600x375.jpg",
             "Librarians app phone screenshot",
             "https://play.google.com/store/apps/details?id=chris.librariansep",
             viewInPlayStoreStr,
@@ -128,7 +128,7 @@
                 "A tool to migrate data from Umbraco CMS to a SharePoint 2013 site.",
                 "Upgrades to an MVC College application."
             ],
-            "Images/Parabola/ParabolaTablet.png",
+            "Images/Parabola/ParabolaTablet600x375.jpg",
             "Parabola responsive website screenshot",
             "http://www.parabolasoft.co.uk/",
             "Company site",
@@ -147,7 +147,7 @@
                 "Favourites",
                 "Limited user settings"
             ],
-            "Images/AnimalAdjectives/AATabletScreen.png",
+            "Images/AnimalAdjectives/AATabletScreen600x375.jpg",
             "Animal Adjectives Screenshot - Crusty Birman",
             "https://play.google.com/store/apps/details?id=chrisb.animaladjectives&hl=en_GB",
             viewInPlayStoreStr,
@@ -166,7 +166,7 @@
                 "Uses app manifest to cache most of the app so it runs quickly after initial load, and notifies users when an update has been downloaded, prompting them to refresh",
                 "ChartJS used to display the player's stats"
             ],
-            "Images/MTGMirror/draftSimScreenshot.png",
+            "Images/MTGMirror/draftSimScreenshot600x375.jpg",
             "Draft simulator screenshot",
             "http://mtgmirror.com",
             visitTheSiteStr,
@@ -180,7 +180,7 @@
             "MSc. Dissertation",
             "For my MSc. Dissertation I studied the application of Reinforced Learning through self play to the game of Monopoly. I used this technique to produce an artificial intelligence which performed well against humans in a game of Monopoly.",
             [],
-            "Images/Dissertation/monopolycombined.png",
+            "Images/Dissertation/monopolycombined600x375.jpg",
             "Great British Chefs Homepage",
             "https://sites.google.com/site/chrisberry4545/dissertation",
             visitTheSiteStr,

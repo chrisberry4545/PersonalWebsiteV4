@@ -35,6 +35,7 @@
                     
                     var animTime = 1000;
                     scope.activeProj = null;
+                    scope.allImagesLoaded = false;
 
                     scope.openPopup = function ($event) {
 
@@ -86,6 +87,14 @@
                                     scope.$apply();
                                 }
                             } else {
+                                /*Used to hide the loading spinners so they are not still 
+                                 * animating even though they are hidden, while still giving
+                                 * the last image time to fade in.
+                                */
+                                setTimeout(function () {
+                                    scope.allImagesLoaded = true;
+                                    scope.$apply();
+                                }, 500);
                                 clearInterval(this);
                             }
                         }, parseInt(timeBetweenImgLoads, 10));

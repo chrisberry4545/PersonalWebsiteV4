@@ -1,12 +1,15 @@
-﻿<section class="portfolioItems">
+﻿<section class="portfolioItems" ng-class="{ 'allImagesLoaded': allImagesLoaded }">
     <div ng-repeat="proj in projects" style="transform:{{proj.transform}}" ng-click="openPopup($event)" class="popUpWrapper" ng-class="{'selected' : proj.IsActive, 'selectedAnimationFinished' : proj.ShowDetails, 'fadedIn' : proj.imgIsLoaded }">
-        <div ng-click="closePopup()" class="popUpBackground">
+        <div ng-click="closePopup()" class="popUpBackground centered">
         </div>
         <div class="popupClickable">
             <div class="imgHolder">
-                <img  ng-load="imageLoaded()" class="projPopoutImg" src="{{proj.image}}" alt={{proj.imageAlt}} />
+                <img ng-load="imageLoaded()" class="projPopoutImg" src="{{proj.image}}" alt={{proj.imageAlt}} />
                 <div class="imgOverlay"></div>
-                <div class="overlayTitle">{{proj.title}}</div>
+                <div class="overlayTitle centered">{{proj.title}}</div>
+                <div class="centered loaderWrapper">
+                    <div class="loader"></div>
+                </div>
             </div>
 
             <div class="popUpDetails raised2" ng-if="proj.IsActive">
@@ -24,12 +27,12 @@
 
                     <div class="popUpSticker raised1" ng-class="{popUpStickerLink: proj.link != null}" ng-if="proj.link != null">
                         <a href="{{proj.link}}" target="_blank">
-                            <i class="stickerIcon fa fa-{{proj.projFaIcon}} fa-2x"></i>
+                            <i class="stickerIcon centered fa fa-{{proj.projFaIcon}} fa-2x"></i>
                         </a>
                     </div>
 
                     <div class="popUpSticker raised1" ng-if="proj.link == null">
-                        <i class="stickerIcon fa fa-{{proj.projFaIcon}} fa-2x"></i>
+                        <i class="stickerIcon centered fa fa-{{proj.projFaIcon}} fa-2x"></i>
                     </div>
 
                 </div>
