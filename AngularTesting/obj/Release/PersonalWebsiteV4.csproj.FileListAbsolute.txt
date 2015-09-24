@@ -1,0 +1,16 @@
+C:\Users\Chris\Source\Repos\PersonalWebsiteV42\AngularTesting\bin\AngularTesting.dll.config
+C:\Users\Chris\Source\Repos\PersonalWebsiteV42\AngularTesting\bin\AngularTesting.dll
+C:\Users\Chris\Source\Repos\PersonalWebsiteV42\AngularTesting\bin\AngularTesting.pdb
+C:\Users\Chris\Source\Repos\PersonalWebsiteV42\AngularTesting\obj\Release\AngularTesting.dll
+C:\Users\Chris\Source\Repos\PersonalWebsiteV42\AngularTesting\obj\Release\AngularTesting.pdb
+C:\Users\Chris\Source\Repos\PersonalWebsiteV42\AngularTesting\obj\Release\PersonalWebsiteV4.csprojResolveAssemblyReference.cache
+C:\Users\Chris\Source\Repos\PersonalWebsiteV42\AngularTesting\bin\Antlr3.Runtime.dll
+C:\Users\Chris\Source\Repos\PersonalWebsiteV42\AngularTesting\bin\EcmaScript.NET.dll
+C:\Users\Chris\Source\Repos\PersonalWebsiteV42\AngularTesting\bin\Iesi.Collections.dll
+C:\Users\Chris\Source\Repos\PersonalWebsiteV42\AngularTesting\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Chris\Source\Repos\PersonalWebsiteV42\AngularTesting\bin\Newtonsoft.Json.dll
+C:\Users\Chris\Source\Repos\PersonalWebsiteV42\AngularTesting\bin\WebGrease.dll
+C:\Users\Chris\Source\Repos\PersonalWebsiteV42\AngularTesting\bin\Yahoo.Yui.Compressor.Build.MsBuild.dll
+C:\Users\Chris\Source\Repos\PersonalWebsiteV42\AngularTesting\bin\Yahoo.Yui.Compressor.dll
+C:\Users\Chris\Source\Repos\PersonalWebsiteV42\AngularTesting\bin\Antlr3.Runtime.pdb
+C:\Users\Chris\Source\Repos\PersonalWebsiteV42\AngularTesting\bin\Newtonsoft.Json.xml

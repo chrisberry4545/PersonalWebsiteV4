@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -38,7 +39,23 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="EcmaScript.NET">
+      <HintPath>..\packages\YUICompressor.NET.MSBuild.2.7.0.0\lib\NET20\EcmaScript.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\packages\YUICompressor.NET.2.0.0.0\lib\NET20\Iesi.Collections.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -55,16 +72,48 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebGrease">
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Yahoo.Yui.Compressor">
+      <HintPath>..\packages\YUICompressor.NET.MSBuild.2.7.0.0\lib\NET20\Yahoo.Yui.Compressor.dll</HintPath>
+    </Reference>
+    <Reference Include="Yahoo.Yui.Compressor.Build.MsBuild">
+      <HintPath>..\packages\YUICompressor.NET.MSBuild.2.7.0.0\lib\NET20\Yahoo.Yui.Compressor.Build.MsBuild.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\directives\anchor_smooth_scroll.min.js" />
-    <Content Include="app\directives\ProjectPopout.js" />
-    <Content Include="app\directives\SkillsSummary.js" />
-    <Content Include="app\home\CutoutName.js" />
+    <Content Include="app\bundledappscripts.min.js" />
+    <Content Include="Content\bundledcss.min.css" />
+    <Content Include="Content\Favicon\apple-touch-icon-114x114.png" />
+    <Content Include="Content\Favicon\apple-touch-icon-120x120.png" />
+    <Content Include="Content\Favicon\apple-touch-icon-144x144.png" />
+    <Content Include="Content\Favicon\apple-touch-icon-152x152.png" />
+    <Content Include="Content\Favicon\apple-touch-icon-57x57.png" />
+    <Content Include="Content\Favicon\apple-touch-icon-60x60.png" />
+    <Content Include="Content\Favicon\apple-touch-icon-72x72.png" />
+    <Content Include="Content\Favicon\apple-touch-icon-76x76.png" />
+    <Content Include="app\directives\cutoutname\CutoutName.min.js">
+      <DependentUpon>CutoutName.js</DependentUpon>
+    </Content>
+    <Content Include="app\directives\projectpopout\ProjectPopout.js" />
+    <Content Include="app\directives\projectpopout\ProjectPopout.min.js">
+      <DependentUpon>ProjectPopout.js</DependentUpon>
+    </Content>
+    <Content Include="archive\directives\SkillsSummary.js" />
+    <Content Include="app\directives\cutoutname\CutoutName.js" />
+    <Content Include="archive\directives\SkillsSummary.min.js">
+      <DependentUpon>SkillsSummary.js</DependentUpon>
+    </Content>
     <Content Include="app\home\home.html" />
     <Content Include="app\home\HomeController.js" />
-    <Content Include="app\home\HomeModule.js" />
-    <Content Include="app\projects\ProjectsSpinnerDirective.js" />
+    <Content Include="app\home\HomeController.min.js">
+      <DependentUpon>HomeController.js</DependentUpon>
+    </Content>
+    <Content Include="app\services\ProjectsService.min.js">
+      <DependentUpon>ProjectsService.js</DependentUpon>
+    </Content>
+    <Content Include="archive\projects\ProjectsSpinnerDirective.js" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\projectPopup.css">
       <DependentUpon>projectPopup.scss</DependentUpon>
@@ -72,17 +121,46 @@
     <Content Include="Content\projectPopup.min.css">
       <DependentUpon>projectPopup.css</DependentUpon>
     </Content>
-    <Content Include="Content\projectSpinner.css" />
-    <Content Include="Content\projectSpinner.min.css" />
-    <Content Include="Content\skillsDirective.css" />
-    <Content Include="Content\skillsDirective.min.css" />
-    <Content Include="cutoutname-template.html" />
+    <Content Include="archive\Content\projectSpinner.css" />
+    <Content Include="archive\Content\projectSpinner.min.css" />
+    <Content Include="archive\Content\skillsDirective.css" />
+    <Content Include="archive\Content\skillsDirective.min.css" />
+    <Content Include="app\directives\cutoutname\cutoutname-template.html" />
+    <Content Include="Content\Favicon\favicon-128.png" />
+    <Content Include="Content\Favicon\favicon-16x16.png" />
+    <Content Include="Content\Favicon\favicon-196x196.png" />
+    <Content Include="Content\Favicon\favicon-32x32.png" />
+    <Content Include="Content\Favicon\favicon-96x96.png" />
+    <Content Include="Content\Favicon\favicon.ico" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\Favicon\mstile-144x144.png" />
+    <Content Include="Content\Favicon\mstile-150x150.png" />
+    <Content Include="Content\Favicon\mstile-310x150.png" />
+    <Content Include="Content\Favicon\mstile-310x310.png" />
+    <Content Include="Content\Favicon\mstile-70x70.png" />
+    <Content Include="app\directives\projectpopout\project-popout-template.html" />
+    <Content Include="archive\projects\project-spinner-template.html" />
+    <Content Include="Content\app.scss" />
+    <Content Include="Content\app.css.map">
+      <DependentUpon>app.css</DependentUpon>
+    </Content>
+    <Content Include="Content\projectPopup.scss" />
+    <Content Include="Content\projectPopup.css.map">
+      <DependentUpon>projectPopup.css</DependentUpon>
+    </Content>
+    <Content Include="archive\Content\projectSpinner.css.map" />
+    <Content Include="archive\Content\projectSpinner.scss" />
+    <Content Include="archive\Content\skillsDirective.css.map" />
+    <Content Include="archive\Content\skillsDirective.scss" />
     <Content Include="Images\AnimalAdjectives\AATabletScreen.png" />
+    <Content Include="Images\AnimalAdjectives\AATabletScreen600x375.jpg" />
     <Content Include="Images\AnimalAdjectives\AATabletScreenold.png" />
     <Content Include="Images\AnimalAdjectives\CrustyBirmanScreen.png" />
     <Content Include="Images\Dissertation\monopolycombined.png" />
+    <Content Include="Images\Dissertation\monopolycombined600x375.jpg" />
     <Content Include="Images\Dissertation\monopolycombinedold.png" />
     <Content Include="Images\GBC\GBCHome.png" />
+    <Content Include="Images\GBC\GBCHome600x375.jpg" />
     <Content Include="Images\GBC\GBCHomeBlurred.png" />
     <Content Include="Images\GBC\GBCHomeMassive.png" />
     <Content Include="Images\General\Coding.png" />
@@ -92,16 +170,22 @@
     <Content Include="Images\General\pc.jpg" />
     <Content Include="Images\General\play.svg" />
     <Content Include="Images\HouseOwage\houseOwageScreenshot1.png" />
+    <Content Include="Images\HouseOwage\houseOwageScreenshot600x375.jpg" />
     <Content Include="Images\HouseOwage\houseOwageScreenshotold.png" />
     <Content Include="Images\Librarians\librariansPhoneScreenshot1.png" />
     <Content Include="Images\Librarians\librariansTabletScreenshot1.png" />
     <Content Include="Images\Librarians\librariansTabletScreenshot1odl.png" />
+    <Content Include="Images\Librarians\librariansTabletScreenshot600x375.jpg" />
     <Content Include="Images\MTGMirror\draftSimScreenshot.png" />
+    <Content Include="Images\MTGMirror\draftSimScreenshot600x375.jpg" />
     <Content Include="Images\MTGMirror\draftSimScreenshotold.png" />
     <Content Include="Images\Parabola\ParabolaTablet.png" />
+    <Content Include="Images\Parabola\ParabolaTablet600x375.jpg" />
     <Content Include="Images\Parabola\ParabolaTabletold.png" />
     <Content Include="Images\Parabola\ParabolaWebsiteold.png" />
     <Content Include="Images\PebbleBikeTracker\londonbike.png" />
+    <Content Include="Images\PebbleBikeTracker\londonbike2.png" />
+    <Content Include="Images\PebbleBikeTracker\londonbike600x375.jpg" />
     <Content Include="Images\PebbleBikeTracker\londonbikeold.png" />
     <Content Include="Images\Timeline\android.svg" />
     <Content Include="Images\Timeline\clock.svg" />
@@ -109,23 +193,31 @@
     <Content Include="Images\Timeline\cogs.svg" />
     <Content Include="Images\Timeline\university.svg" />
     <Content Include="Images\Timeline\web.svg" />
-    <Content Include="project-popout-template.html" />
-    <Content Include="project-spinner-template.html" />
-    <Content Include="Content\app.scss" />
-    <Content Include="Content\app.css.map">
-      <DependentUpon>app.css</DependentUpon>
+    <Content Include="MsBuild\Bundling.xml">
+      <SubType>Designer</SubType>
     </Content>
-    <Content Include="Content\projectPopup.scss" />
-    <Content Include="Content\projectPopup.css.map">
-      <DependentUpon>projectPopup.css</DependentUpon>
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="app\directives\cutoutname\CutoutName.min.js.map">
+      <DependentUpon>CutoutName.min.js</DependentUpon>
     </Content>
-    <Content Include="Content\projectSpinner.css.map" />
-    <Content Include="Content\projectSpinner.scss" />
-    <Content Include="Content\skillsDirective.css.map" />
-    <Content Include="Content\skillsDirective.scss" />
-    <Content Include="Scripts\angular-scroll-animate.min.js.map">
-      <DependentUpon>angular-scroll-animate.min.js</DependentUpon>
+    <Content Include="app\directives\projectpopout\ProjectPopout.min.js.map">
+      <DependentUpon>ProjectPopout.min.js</DependentUpon>
     </Content>
+    <Content Include="archive\directives\SkillsSummary.min.js.map">
+      <DependentUpon>SkillsSummary.min.js</DependentUpon>
+    </Content>
+    <Content Include="app\services\ProjectsService.min.js.map">
+      <DependentUpon>ProjectsService.min.js</DependentUpon>
+    </Content>
+    <Content Include="app\home\HomeController.min.js.map">
+      <DependentUpon>HomeController.min.js</DependentUpon>
+    </Content>
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\filepub.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -134,15 +226,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\projects\ProjectDetailController.js" />
-    <Content Include="app\projects\ProjectsModule.js" />
-    <Content Include="app\projects\ProjectsService.js" />
-    <Content Include="app\projects\view\project.html" />
-    <Content Include="app\projects\ProjectController.js" />
-    <Content Include="app\users\UserController.js" />
-    <Content Include="app\users\Users.js" />
-    <Content Include="app\users\UserService.js" />
-    <Content Include="app\users\view\contactSheet.html" />
+    <Content Include="app\services\ProjectsService.js" />
+    <Content Include="archive\projects\view\project.html" />
+    <Content Include="archive\projects\ProjectController.js" />
     <Content Include="Content\app.css">
       <DependentUpon>app.scss</DependentUpon>
     </Content>
@@ -150,21 +236,18 @@
       <DependentUpon>app.css</DependentUpon>
     </Content>
     <Content Include="index.html" />
-    <Content Include="Scripts\angular-scroll-animate.js" />
-    <Content Include="Scripts\angular-scroll-animate.min.js">
-      <DependentUpon>angular-scroll-animate.js</DependentUpon>
-    </Content>
-    <Content Include="Scripts\angular\angular-animate.min.js" />
-    <Content Include="Scripts\angular\angular-aria.min.js" />
     <Content Include="Scripts\angular\angular-route.min.js" />
     <Content Include="Scripts\angular\angular.js" />
     <Content Include="Scripts\angular\angular.min.js" />
-    <Content Include="skills-summary-template.html" />
+    <Content Include="Scripts\bundledvendorscripts.min.js" />
+    <Content Include="Scripts\canvasv5.js" />
+    <Content Include="archive\directives\skills-summary-template.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -190,6 +273,9 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>"C:\Program Files (x86)\MSBuild\12.0\bin\msbuild.exe" "$(ProjectDir)MSBuild\Bundling.xml" /p:ConfigurationName=$(ConfigurationName)</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
