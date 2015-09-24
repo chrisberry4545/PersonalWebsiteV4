@@ -124,13 +124,13 @@ $navWidth:16rem;
     z-index: 2;
     background: white;
     width: 100vw;
-    height: 100vh;
 
     @media (min-width: $breakpointSM) {
         top: 0;
         left: 0;
         position: fixed;
         width: $navWidth;
+        height: 100vh;
     }
 
 
@@ -174,18 +174,24 @@ $navWidth:16rem;
 
     h1, h2 {
         color: $darkTextColor;
-        font-weight: 300;
+        font-weight: 400;
     }
 
     .contact {
-        position: absolute;
-        bottom: 2rem;
-        left: 50%;
-        -moz-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        -o-transform: translateX(-50%);
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
+        
+        padding-bottom:2rem;
+
+        @media(min-width:$breakpointSM) {
+            position: absolute;
+            bottom: 2rem;
+            padding-bottom:0;
+            left: 50%;
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
 
         a {
             color:$darkTextColor;
@@ -245,6 +251,7 @@ $navWidth:16rem;
         }
     }
 }
+
 
 /*.divider {
     border-bottom: $dividerBorderColor;

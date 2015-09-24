@@ -112,7 +112,7 @@
                     color: '=color',
                     timebeforeanimate: '=timebeforeanimate'
                 },
-                templateUrl: 'cutoutname-template.html'
+                templateUrl: '/app/directives/cutoutname/cutoutname-template.html'
             };
         }]);
 
