@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/MsBuild/2003">
+
+  <UsingTask TaskName="CssCompressorTask" AssemblyFile="..\bin\Yahoo.Yui.Compressor.Build.MsBuild.dll" />
+  <UsingTask TaskName="JavaScriptCompressorTask" AssemblyFile="..\bin\Yahoo.Yui.Compressor.Build.MsBuild.dll" />
+
+  <Target Name="Minify" Condition="'$(ConfigurationName)' == 'Release'">
+
+    <ItemGroup>
+      <!-- Single files, listed in order of dependency -->
+      <CssFiles Include="..\Content\app.min.css" />
+      <CssFiles Include="..\Content\projectPopup.min.css" />
+      <CssFiles Include="..\Content\font-awesome.min.css" />
+
+      <AppJavaScriptFiles Include="..\app\directives\cutoutname\CutoutName.min.js"/>
+      <AppJavaScriptFiles Include="..\app\services\ProjectsService.min.js" />
+      <AppJavaScriptFiles Include="..\app\directives\projectpopout\ProjectPopout.min.js"/>
+      <AppJavaScriptFiles Include="..\app\home\HomeController.min.js" />
+      
+      <VendorJavaScriptFiles Include="..\Scripts\canvasv5.js" />
+      <VendorJavaScriptFiles Include="..\Scripts\angular\angular-route.min.js" />
+    </ItemGroup>
+
+    <CssCompressorTask
+          SourceFiles="@(CssFiles)"
+          DeleteSourceFiles="false"
+          OutputFile="..\Content\bundledcss.min.css"
+          CompressionType="Standard"
+          LoggingType="Info"
+          PreserveComments="false"
+          LineBreakPosition="-1"
+       />
+
+    <JavaScriptCompressorTask
+        SourceFiles="@(AppJavaScriptFiles)"
+        DeleteSourceFiles="false"
+        OutputFile="..\app\bundledappscripts.min.js"
+        CompressionType="Standard"
+        ObfuscateJavaScript="True"
+        PreserveAllSemicolons="False"
+        DisableOptimizations="No"
+        EncodingType="Default"
+        LineBreakPosition="-1"
+        LoggingType="Info"
+        ThreadCulture="en-gb"
+        IsEvalIgnored="false"
+            />
+
+    <JavaScriptCompressorTask
+        SourceFiles="@(VendorJavaScriptFiles)"
+        DeleteSourceFiles="false"
+        OutputFile="..\Scripts\bundledvendorscripts.min.js"
+        CompressionType="Standard"
+        ObfuscateJavaScript="True"
+        PreserveAllSemicolons="False"
+        DisableOptimizations="No"
+        EncodingType="Default"
+        LineBreakPosition="-1"
+        LoggingType="Info"
+        ThreadCulture="en-gb"
+        IsEvalIgnored="false"
+            />
+
+  </Target>
+</Project>
