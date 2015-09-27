@@ -15,6 +15,10 @@
             <div class="popUpDetails raised2" ng-if="proj.IsActive">
                 <div class="popUpDetailsInner">
                     <h2>{{proj.title}}</h2>
+                    <h3 ng-if="proj.skills != null && proj.skills.length > 0">
+                        <span ng-repeat="skill in proj.skills">{{skill}} <span ng-if="$index < proj.skills.length - 1"> / </span></span>
+                    </h3>
+
                     <p>
                         {{proj.description}}
                     </p>
@@ -25,13 +29,23 @@
                         </li>
                     </ul>
 
-                    <div class="popUpSticker raised1" ng-class="{popUpStickerLink: proj.link != null}" ng-if="proj.link != null">
-                        <a href="{{proj.link}}" target="_blank">
+                    <div>
+                        <span ng-if="proj.link != null">
+                            <a target="_blank" href="{{proj.link}}">{{proj.linkName}}</a>
+                        </span>
+                        <span ng-if="proj.link != null && proj.githubLink != null">|</span>
+                        <span ng-if="proj.githubLink != null">
+                            <a target="_blank" href="{{proj.githubLink}}">{{proj.githubLinkText}}</a>
+                        </span>
+                    </div>
+
+                    <div class="popUpSticker raised1 popUpStickerLink" ng-if="proj.link != null || proj.githubLink != null">
+                        <a href="{{proj.link != null ? proj.link : proj.githubLink}}" target="_blank">
                             <i class="stickerIcon centered fa fa-{{proj.projFaIcon}} fa-2x"></i>
                         </a>
                     </div>
 
-                    <div class="popUpSticker raised1" ng-if="proj.link == null">
+                    <div class="popUpSticker raised1" ng-if="proj.link == null && proj.githubLink == null">
                         <i class="stickerIcon centered fa fa-{{proj.projFaIcon}} fa-2x"></i>
                     </div>
 

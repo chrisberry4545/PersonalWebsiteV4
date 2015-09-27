@@ -50,7 +50,6 @@ $popUpBackgroundColor: white;
     }
 
 
-
     .popUpDetails {
         color: $popUpTextColor;
         position: fixed;
@@ -70,6 +69,15 @@ $popUpBackgroundColor: white;
             font-size:1rem;
             font-weight:500;
         }
+        h3 {
+            font-size:1rem;
+            font-weight:400;
+        }
+
+        p, li, h2, h3 {
+            margin-top:0.75rem;
+            margin-bottom:0.75rem;
+        }
 
 
         .popUpDetailsInner {
@@ -78,11 +86,15 @@ $popUpBackgroundColor: white;
 
             li, p {
                 font-weight:300;
-                color:rgba(0,0,0,0.9);
+                color:$popUpTextColor;
             }
 
             ul {
                 padding-left: 20px;
+            }
+
+            a {
+                color: $popUpTextColor;
             }
 
         }
@@ -325,86 +337,105 @@ $backgroundColor: rgba(0,0,0,0.55);
 
 
 $loaderColor: rgba(255,255,255,0.95);
-
-.loader,
-.loader:before,
-.loader:after {
-    background: $loaderColor;
-    -webkit-animation: load1 1s infinite ease-in-out;
-    -moz-animation: load1 1s infinite ease-in-out;
-    -o-animation: load1 1s infinite ease-in-out;
-    animation: load1 1s infinite ease-in-out;
-    width: 1em;
-    height: 4em;
-}
-.loader:before,
-.loader:after {
-  position: absolute;
-  top: 0;
-  content: '';
-}
-.loader:before {
-    left: -1.5em;
-    -webkit-animation-delay: -0.32s;
-    -moz-animation-delay: -0.32s;
-    -o-animation-delay: -0.32s;
-    animation-delay: -0.32s;
-}
 .loader {
-    text-indent: -9999em;
-    margin: 88px auto;
+    font-size: 20px;
+    margin: 100px auto;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
     position: relative;
-    font-size: 11px;
+    text-indent: -9999em;
+    -webkit-animation: load4 1.3s infinite linear;
+    -moz-animation: load4 1.3s infinite linear;
+    -o-animation: load4 1.3s infinite linear;
+    animation: load4 1.3s infinite linear;
     -webkit-transform: translateZ(0);
     -ms-transform: translateZ(0);
     -moz-transform: translateZ(0);
     -o-transform: translateZ(0);
     transform: translateZ(0);
-    -webkit-animation-delay: -0.16s;
-    -moz-animation-delay: -0.16s;
-    -o-animation-delay: -0.16s;
-    animation-delay: -0.16s;
-
-    &:after{
-        left: 1.5em;
-    }
 }
-@-moz-keyframes load1 {
+@-moz-keyframes load4 {
   0%,
-  80%,
   100% {
-    box-shadow: 0 0 $loaderColor;
-    height: 4em;
+    box-shadow: 0 -3em 0 0.2em $loaderColor, 2em -2em 0 0em $loaderColor, 3em 0 0 -1em $loaderColor, 2em 2em 0 -1em $loaderColor, 0 3em 0 -1em $loaderColor, -2em 2em 0 -1em $loaderColor, -3em 0 0 -1em $loaderColor, -2em -2em 0 0 $loaderColor;
   }
-  40% {
-    box-shadow: 0 -2em $loaderColor;
-    height: 5em;
+  12.5% {
+    box-shadow: 0 -3em 0 0 $loaderColor, 2em -2em 0 0.2em $loaderColor, 3em 0 0 0 $loaderColor, 2em 2em 0 -1em $loaderColor, 0 3em 0 -1em $loaderColor, -2em 2em 0 -1em $loaderColor, -3em 0 0 -1em $loaderColor, -2em -2em 0 -1em $loaderColor;
   }
-}
-
-@-webkit-keyframes load1 {
-  0%,
-  80%,
-  100% {
-    box-shadow: 0 0 $loaderColor;
-    height: 4em;
+  25% {
+    box-shadow: 0 -3em 0 -0.5em $loaderColor, 2em -2em 0 0 $loaderColor, 3em 0 0 0.2em $loaderColor, 2em 2em 0 0 $loaderColor, 0 3em 0 -1em $loaderColor, -2em 2em 0 -1em $loaderColor, -3em 0 0 -1em $loaderColor, -2em -2em 0 -1em $loaderColor;
   }
-  40% {
-    box-shadow: 0 -2em $loaderColor;
-    height: 5em;
+  37.5% {
+    box-shadow: 0 -3em 0 -1em $loaderColor, 2em -2em 0 -1em $loaderColor, 3em 0em 0 0 $loaderColor, 2em 2em 0 0.2em $loaderColor, 0 3em 0 0em $loaderColor, -2em 2em 0 -1em $loaderColor, -3em 0em 0 -1em $loaderColor, -2em -2em 0 -1em $loaderColor;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em $loaderColor, 2em -2em 0 -1em $loaderColor, 3em 0 0 -1em $loaderColor, 2em 2em 0 0em $loaderColor, 0 3em 0 0.2em $loaderColor, -2em 2em 0 0 $loaderColor, -3em 0em 0 -1em $loaderColor, -2em -2em 0 -1em $loaderColor;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em $loaderColor, 2em -2em 0 -1em $loaderColor, 3em 0 0 -1em $loaderColor, 2em 2em 0 -1em $loaderColor, 0 3em 0 0 $loaderColor, -2em 2em 0 0.2em $loaderColor, -3em 0 0 0 $loaderColor, -2em -2em 0 -1em $loaderColor;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em $loaderColor, 2em -2em 0 -1em $loaderColor, 3em 0em 0 -1em $loaderColor, 2em 2em 0 -1em $loaderColor, 0 3em 0 -1em $loaderColor, -2em 2em 0 0 $loaderColor, -3em 0em 0 0.2em $loaderColor, -2em -2em 0 0 $loaderColor;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0 $loaderColor, 2em -2em 0 -1em $loaderColor, 3em 0 0 -1em $loaderColor, 2em 2em 0 -1em $loaderColor, 0 3em 0 -1em $loaderColor, -2em 2em 0 0 $loaderColor, -3em 0em 0 0 $loaderColor, -2em -2em 0 0.2em $loaderColor;
   }
 }
 
-@keyframes load1 {
+@-webkit-keyframes load4 {
   0%,
-  80%,
   100% {
-    box-shadow: 0 0 $loaderColor;
-    height: 4em;
+    box-shadow: 0 -3em 0 0.2em $loaderColor, 2em -2em 0 0em $loaderColor, 3em 0 0 -1em $loaderColor, 2em 2em 0 -1em $loaderColor, 0 3em 0 -1em $loaderColor, -2em 2em 0 -1em $loaderColor, -3em 0 0 -1em $loaderColor, -2em -2em 0 0 $loaderColor;
   }
-  40% {
-    box-shadow: 0 -2em $loaderColor;
-    height: 5em;
+  12.5% {
+    box-shadow: 0 -3em 0 0 $loaderColor, 2em -2em 0 0.2em $loaderColor, 3em 0 0 0 $loaderColor, 2em 2em 0 -1em $loaderColor, 0 3em 0 -1em $loaderColor, -2em 2em 0 -1em $loaderColor, -3em 0 0 -1em $loaderColor, -2em -2em 0 -1em $loaderColor;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em $loaderColor, 2em -2em 0 0 $loaderColor, 3em 0 0 0.2em $loaderColor, 2em 2em 0 0 $loaderColor, 0 3em 0 -1em $loaderColor, -2em 2em 0 -1em $loaderColor, -3em 0 0 -1em $loaderColor, -2em -2em 0 -1em $loaderColor;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em $loaderColor, 2em -2em 0 -1em $loaderColor, 3em 0em 0 0 $loaderColor, 2em 2em 0 0.2em $loaderColor, 0 3em 0 0em $loaderColor, -2em 2em 0 -1em $loaderColor, -3em 0em 0 -1em $loaderColor, -2em -2em 0 -1em $loaderColor;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em $loaderColor, 2em -2em 0 -1em $loaderColor, 3em 0 0 -1em $loaderColor, 2em 2em 0 0em $loaderColor, 0 3em 0 0.2em $loaderColor, -2em 2em 0 0 $loaderColor, -3em 0em 0 -1em $loaderColor, -2em -2em 0 -1em $loaderColor;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em $loaderColor, 2em -2em 0 -1em $loaderColor, 3em 0 0 -1em $loaderColor, 2em 2em 0 -1em $loaderColor, 0 3em 0 0 $loaderColor, -2em 2em 0 0.2em $loaderColor, -3em 0 0 0 $loaderColor, -2em -2em 0 -1em $loaderColor;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em $loaderColor, 2em -2em 0 -1em $loaderColor, 3em 0em 0 -1em $loaderColor, 2em 2em 0 -1em $loaderColor, 0 3em 0 -1em $loaderColor, -2em 2em 0 0 $loaderColor, -3em 0em 0 0.2em $loaderColor, -2em -2em 0 0 $loaderColor;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0 $loaderColor, 2em -2em 0 -1em $loaderColor, 3em 0 0 -1em $loaderColor, 2em 2em 0 -1em $loaderColor, 0 3em 0 -1em $loaderColor, -2em 2em 0 0 $loaderColor, -3em 0em 0 0 $loaderColor, -2em -2em 0 0.2em $loaderColor;
+  }
+}
+
+@keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em $loaderColor, 2em -2em 0 0em $loaderColor, 3em 0 0 -1em $loaderColor, 2em 2em 0 -1em $loaderColor, 0 3em 0 -1em $loaderColor, -2em 2em 0 -1em $loaderColor, -3em 0 0 -1em $loaderColor, -2em -2em 0 0 $loaderColor;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0 $loaderColor, 2em -2em 0 0.2em $loaderColor, 3em 0 0 0 $loaderColor, 2em 2em 0 -1em $loaderColor, 0 3em 0 -1em $loaderColor, -2em 2em 0 -1em $loaderColor, -3em 0 0 -1em $loaderColor, -2em -2em 0 -1em $loaderColor;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em $loaderColor, 2em -2em 0 0 $loaderColor, 3em 0 0 0.2em $loaderColor, 2em 2em 0 0 $loaderColor, 0 3em 0 -1em $loaderColor, -2em 2em 0 -1em $loaderColor, -3em 0 0 -1em $loaderColor, -2em -2em 0 -1em $loaderColor;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em $loaderColor, 2em -2em 0 -1em $loaderColor, 3em 0em 0 0 $loaderColor, 2em 2em 0 0.2em $loaderColor, 0 3em 0 0em $loaderColor, -2em 2em 0 -1em $loaderColor, -3em 0em 0 -1em $loaderColor, -2em -2em 0 -1em $loaderColor;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em $loaderColor, 2em -2em 0 -1em $loaderColor, 3em 0 0 -1em $loaderColor, 2em 2em 0 0em $loaderColor, 0 3em 0 0.2em $loaderColor, -2em 2em 0 0 $loaderColor, -3em 0em 0 -1em $loaderColor, -2em -2em 0 -1em $loaderColor;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em $loaderColor, 2em -2em 0 -1em $loaderColor, 3em 0 0 -1em $loaderColor, 2em 2em 0 -1em $loaderColor, 0 3em 0 0 $loaderColor, -2em 2em 0 0.2em $loaderColor, -3em 0 0 0 $loaderColor, -2em -2em 0 -1em $loaderColor;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em $loaderColor, 2em -2em 0 -1em $loaderColor, 3em 0em 0 -1em $loaderColor, 2em 2em 0 -1em $loaderColor, 0 3em 0 -1em $loaderColor, -2em 2em 0 0 $loaderColor, -3em 0em 0 0.2em $loaderColor, -2em -2em 0 0 $loaderColor;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0 $loaderColor, 2em -2em 0 -1em $loaderColor, 3em 0 0 -1em $loaderColor, 2em 2em 0 -1em $loaderColor, 0 3em 0 -1em $loaderColor, -2em 2em 0 0 $loaderColor, -3em 0em 0 0 $loaderColor, -2em -2em 0 0.2em $loaderColor;
   }
 }
 

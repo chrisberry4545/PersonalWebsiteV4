@@ -46,7 +46,10 @@
                             scope.activeImgEl = imgEl;
                             var boundingRect = imgEl.getBoundingClientRect();
                             var translateLeft = (window.innerWidth / 2) - boundingRect.left - (boundingRect.width / 2);
-                            var translateTop = -boundingRect.top + 75;
+
+                            var distanceFromTop = window.innerWidth / 50;
+
+                            var translateTop = -boundingRect.top + distanceFromTop;
                             scope.activeProj.transform =
                                 'translate(' + translateLeft + 'px, ' + translateTop + 'px)';
 
@@ -110,7 +113,8 @@
                 scope: {
                     projects: '=projects',
                     timebetweenimgloads: '=timebetweenimgloads',
-                    animstartdelay: '=animstartdelay'
+                    animstartdelay: '=animstartdelay',
+                    selectedProject: '=selected'
                 },
                 compile: compile,
                 templateUrl: '/app/directives/projectpopout/project-popout-template.html'

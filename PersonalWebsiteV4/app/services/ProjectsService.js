@@ -27,9 +27,9 @@
             self.blurredImage = 'Images/GBC/GBCHomeBlurred.png';
         }
 
-        var visitTheSiteStr = "Visit";
-        var viewInPlayStoreStr = "View in the play store";
-        var viewOnGithubStr = "View on github";
+        var visitTheSiteStr = "To the site";
+        var viewInPlayStoreStr = "Play store";
+        var viewOnGithubStr = "GitHub";
 
         var timelineStartUrl = "Images/Timeline/";
         var generalStartUrl = "Images/General/";
@@ -46,7 +46,8 @@
 
         var bikeTrackerPebble = new ProjectElement(
             "London TFL Bike Point Tracker",
-            "An app for Pebble Smartwatches which uses TFL data to find the bike point nearest to the user, and show them an arrow pointing towards it.",
+            "An app for Pebble Smartwatches which uses TFL data to find the bike point nearest to the user."
+            + "The app then uses the watches compass to direct the user towards the bike point.",
             [
 
             ],
@@ -59,6 +60,7 @@
             "2015",
             clockSVG
             );
+        bikeTrackerPebble.githubLink = 'https://github.com/chrisberry4545/BikeTracker';
 
         var gbc = new ProjectElement(
             "Great British Chefs",
@@ -79,7 +81,7 @@
             "http://www.greatbritishchefs.com",
             visitTheSiteStr,
             globeSVG,
-            ["C# (inc. MVC)", "Javascript (inc. KnockoutJS)", "SQL", "CSS", "HTML"],
+            ["C# (MVC)", "Javascript (KnockoutJS, JQuery)", "SQL", "CSS", "HTML"],
             "2015 - Present",
             cogsSVG);
 
@@ -92,7 +94,7 @@
             null,
             null,
             null,
-            ["C# (inc. MVC)", "SQL", "Javascript", "CSS", "HTML"],
+            ["C# (MVC)", "SQL", "Javascript", "CSS", "HTML"],
             "2015",
             webSVG);
         houseOwage.githubLink = "https://github.com/chrisberry4545/HouseOwage";
@@ -131,9 +133,9 @@
             "Images/Parabola/ParabolaTablet600x375.jpg",
             "Parabola responsive website screenshot",
             "http://www.parabolasoft.co.uk/",
-            "Company site",
+            "To the company site",
             globeSVG,
-            ["C# (inc. Web API 2, MVC)", "Javascript (inc. AngularJS)", "SQL", "SharePoint", "CSS", "HTML"],
+            ["C# (Web API 2, MVC)", "Javascript (AngularJS, JQuery)", "SQL", "SharePoint", "CSS", "HTML"],
             "2013 - 2014",
             cogsSVG);
 
@@ -159,10 +161,10 @@
 
         var mtgMirror = new ProjectElement(
             "MTG Mirror",
-            "MTG Mirror is a web app for fans of the popular card game Magic: the Gathering. It simulates certain aspects of the game allowing players to practice.",
+            "MTG Mirror is a web app for fans of the popular card game Magic: the Gathering. It simulates certain aspects of the game for players to practice.",
             [
-                "Proven to be a popular app with 40,000 - 60,000 sessions a month - mostly made up of returning visitors (66% returning June-July 2015)",
-                "Single page app built using AngularJS, the app is run completely on the client side",
+                "Proven to be a popular app with 40,000 - 80,000 sessions a month",
+                "Single page app built using AngularJS, the app does all the processing on the client side",
                 "Uses app manifest to cache most of the app so it runs quickly after initial load, and notifies users when an update has been downloaded, prompting them to refresh",
                 "ChartJS used to display the player's stats"
             ],
@@ -171,7 +173,7 @@
             "http://mtgmirror.com",
             visitTheSiteStr,
             globeSVG,
-            ["Javascript (inc. AngularJS)", "CSS (inc. Bootstrap)", "HTML"],
+            ["Javascript (AngularJS)", "CSS (Bootstrap)", "HTML"],
             "2013 - Present",
             webSVG);
         mtgMirror.githubLink = "https://github.com/chrisberry4545/MTGWeb";
@@ -185,7 +187,7 @@
             "https://sites.google.com/site/chrisberry4545/dissertation",
             visitTheSiteStr,
             globeSVG,
-            ["Java (inc. Swing)"],
+            ["Java (Swing)"],
             "2013",
             uniSVG);
 
