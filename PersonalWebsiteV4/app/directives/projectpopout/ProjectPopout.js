@@ -53,9 +53,11 @@
                             scope.activeProj.transform =
                                 'translate(' + translateLeft + 'px, ' + translateTop + 'px)';
 
+
                             setTimeout(function () {
                                 scope.activeProj.ShowDetails = true;
                                 scope.$apply();
+
                             }, animTime);
                         }
 

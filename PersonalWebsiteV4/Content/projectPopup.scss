@@ -52,7 +52,8 @@ $popUpBackgroundColor: white;
 
     .popUpDetails {
         color: $popUpTextColor;
-        position: fixed;
+        position: absolute;
+        margin-bottom: 2rem;
         left: 0;
         top: 100%;
         max-height: 0;
@@ -313,7 +314,7 @@ $backgroundColor: rgba(0,0,0,0.55);
         opacity:1;
     }
     .popUpDetails {
-        max-height:1000px;
+        max-height:100vh;
 
         .popUpSticker {
             display:block;

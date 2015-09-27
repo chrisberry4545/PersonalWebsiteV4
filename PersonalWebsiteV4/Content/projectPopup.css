@@ -51,7 +51,8 @@
 
 .popUpWrapper .popUpDetails {
   color: rgba(0, 0, 0, 0.8);
-  position: fixed;
+  position: absolute;
+  margin-bottom: 2rem;
   left: 0;
   top: 100%;
   max-height: 0;
@@ -292,7 +293,7 @@
 }
 
 .selectedAnimationFinished .popUpDetails {
-  max-height: 1000px;
+  max-height: 100vh;
 }
 
 .selectedAnimationFinished .popUpDetails .popUpSticker {
