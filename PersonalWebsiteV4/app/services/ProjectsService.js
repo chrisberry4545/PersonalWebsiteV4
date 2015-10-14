@@ -163,7 +163,7 @@
             "MTG Mirror",
             "MTG Mirror is a web app for fans of the popular card game Magic: the Gathering. It simulates certain aspects of the game for players to practice.",
             [
-                "Proven to be a popular app with 40,000 - 80,000 sessions a month",
+                "Proven to be a popular app with 70,000 - 100,000 sessions a month",
                 "Single page app built using AngularJS, the app does all the processing on the client side",
                 "Uses app manifest to cache most of the app so it runs quickly after initial load, and notifies users when an update has been downloaded, prompting them to refresh",
                 "ChartJS used to display the player's stats"
